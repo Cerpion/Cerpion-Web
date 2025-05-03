@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import Logo from "./Final Final.png";
+import Logo2 from "./Logo.png";
 import "./NavBar.css";
 
 function NavBar() {
   return (
     <nav className="SideNav">
       <div className="LogoContainer">
-        <img className="CerpionLogo" src={Logo} alt="Logo" />
+        <img className="CerpionLogo" src={Logo2} alt="Logo" />
       </div>
 
       <ul className="nav-links">

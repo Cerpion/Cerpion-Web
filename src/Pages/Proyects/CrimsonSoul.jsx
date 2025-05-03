@@ -17,6 +17,7 @@ const CrimsonSoul = () => {
         <img className="CerpionLogo" src={Logo} alt="Logo" />
       </div>
 
+      {/*
       <div className="GameVideoWrapper">
         <iframe
           src="https://www.youtube.com/embed/tgbNymZ7vqY"
@@ -24,6 +25,7 @@ const CrimsonSoul = () => {
           allowFullScreen
         ></iframe>
       </div>
+*/}
 
       <div className="Description">
         <p>Crimson soul is a fast action game with an upgrade rpg system.</p>
