@@ -1,0 +1,49 @@
+.banner-container {
+    width: 100%;
+  }
+  
+  .banner-clickable {
+    width: 100%;
+    height:100%; /* altura base para móviles */
+    overflow: hidden;
+    border-radius: 8px;
+   
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .banner-clickable:hover .banner-image {
+    transform: scale(1.02);
+  }
+  
+  .banner-text {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: var(--White);
+    padding: 5px 0;
+    margin: 0;
+
+    text-align: center;
+    font-size: 14px;
+  }
+  
+.banner-link{
+  text-decoration: none;
+}
+
+  @media (min-width: 768px) {
+    .banner-clickable {
+      height: 180px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .banner-clickable {
+      height: 215px;
+    }
+  }

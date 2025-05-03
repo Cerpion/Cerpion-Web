@@ -1,0 +1,111 @@
+.Title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .Image {
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+  }
+  
+  .Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    display: block;
+  }
+  
+  .Description {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: justify;
+  }
+  
+  .Features {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .Features h3 {
+    margin-bottom: 10px;
+  }
+  
+  .Features p {
+    margin-left: 20px;
+  }
+  
+  .Pictures {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .ImagesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por fila */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .ImagesContainer img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto; /* centrar si son más pequeñas */
+    display: block;
+  }
+  .DownloadLink {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .DownloadLink img {
+    width: 150px;  /* antes 100px */
+    height: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .DownloadLink img:hover {
+    transform: scale(1.1);
+  }
+
+  .GameVideoWrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
+  
+  .GameVideoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    .ImagesContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ImagesContainer {
+      grid-template-columns: 1fr;
+    }
+  }

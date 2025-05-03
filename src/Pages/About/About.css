@@ -1,0 +1,70 @@
+.MobileGifContainer{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.DesktopGifContainer{
+    width: 215px;
+    max-width: 100%;
+    position: relative;
+
+
+    box-sizing: border-box;
+    margin: 0 15px 0 0;
+
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.DesktopGif{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.MobileGif{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block ;
+}
+
+p{
+    text-align: justify;
+}
+
+.highlight {
+    color: var(--Red);
+    font-weight: bold;
+  }
+
+  
+.AboutMeContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media  (min-width:768px) {
+    .DesktopGif {
+      display: block ;
+      
+    }
+  
+    .MobileGif {
+      display: none;
+    }
+
+    .AboutMeContainer{
+        flex-direction: row;
+
+        box-sizing: border-box;
+        padding: 15px 15px 0 0;
+    }
+  }

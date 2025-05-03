@@ -1,0 +1,32 @@
+import { NavLink } from "react-router-dom";
+import Logo from "./Final Final.png";
+import "./NavBar.css";
+
+function NavBar() {
+  return (
+    <nav className="SideNav">
+      <div className="LogoContainer">
+        <img className="CerpionLogo" src={Logo} alt="Logo" />
+      </div>
+
+      <ul className="nav-links">
+        <li>
+          <NavLink to="/" end>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Games">Games</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact">Contact</NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default NavBar;
