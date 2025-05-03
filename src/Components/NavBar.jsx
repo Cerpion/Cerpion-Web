@@ -12,7 +12,7 @@ function NavBar() {
 
       <ul className="nav-links">
         <li>
-          <NavLink to="/" end>
+          <NavLink to="/Cerpion-Web/" end>
             Home
           </NavLink>
         </li>
