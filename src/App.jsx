@@ -21,7 +21,7 @@ function App() {
           <div className="ContentPages">
             <div className="Pages">
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/Cerpion-Web" element={<Home />} />
                 <Route path="/Games" element={<Games />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Contact" element={<Contact />} />
