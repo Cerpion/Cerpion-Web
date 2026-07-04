@@ -12,12 +12,12 @@ const CrimsonSoul = () => {
       <div className="Title">
         <h3>Crimson Soul</h3>
       </div>
-
+      {/*
       <div className="Image">
         <img className="CerpionLogo" src={Logo} alt="Logo" />
       </div>
 
-      {/*
+      
       <div className="GameVideoWrapper">
         <iframe
           src="https://www.youtube.com/embed/tgbNymZ7vqY"

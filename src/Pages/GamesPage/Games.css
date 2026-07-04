@@ -1,4 +1,232 @@
-.BannerContainer{
-  width: 100%;
-  height: 100%;
+.ProjectsPage{
+
+    width:100%;
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:40px 20px;
+
+    box-sizing:border-box;
+}
+
+/* ======================================= */
+
+.ProjectViewer{
+
+    border:1px solid var(--Red);
+
+    background:#252525;
+
+    overflow:hidden;
+
+    border-radius:6px;
+}
+
+/* ======================================= */
+
+.ProjectHeader{
+
+    background:var(--Red);
+
+    padding:18px 30px;
+}
+
+.ProjectHeader h2{
+
+    margin:0 0 10px 0;
+}
+
+.Tags{
+
+    display:flex;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+}
+
+.Tags span{
+
+    background:#2b2b2b;
+
+    color:white;
+
+    padding:4px 10px;
+
+    font-size:14px;
+
+    border-radius:4px;
+}
+
+/* ======================================= */
+
+.ProjectContent{
+
+    display:flex;
+
+    gap:30px;
+
+    padding:30px;
+}
+
+/* ======================================= */
+
+.VideoContainer{
+
+    flex:1;
+}
+
+.VideoContainer iframe{
+
+    width:100%;
+    height: 100%;
+
+    aspect-ratio:16/9;
+
+    border:none;
+
+    border-radius:6px;
+}
+
+/* ======================================= */
+
+.ProjectInfo{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.ProjectInfo h3{
+
+    margin-top:0;
+}
+
+.ProjectInfo p{
+
+    text-align:justify;
+
+    line-height:1.3;
+    margin: 0 0 5px 0;
+}
+
+/* ======================================= */
+
+.ProjectButtons{
+
+    margin-top:auto;
+
+    display:flex;
+
+    gap:20px;
+    margin-top: 5px;
+}
+
+.ProjectButtons button{
+
+    flex:1;
+
+    height:55px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:var(--Red);
+
+    color:white;
+
+    font-size:18px;
+
+    transition:.25s;
+}
+
+.ProjectButtons button:hover{
+
+    background:#ff6549;
+}
+
+/* ======================================= */
+
+.ProjectsList{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+}
+
+.ProjectCard{
+
+    width:90px;
+    height:90px;
+
+    padding:0;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.ProjectCard img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:8px;
+}
+
+.ProjectCard:hover{
+
+    transform:translateY(-5px);
+}
+
+
+.ProjectCard.Active img{
+
+    border:3px solid var(--Red);
+}
+
+/* ======================================= */
+
+@media(max-width:900px){
+
+    .ProjectContent{
+
+        flex-direction:column;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .ProjectButtons{
+
+        flex-direction:column;
+    }
+
+    .ProjectHeader{
+
+        padding:20px;
+    }
+
+    .ProjectContent{
+
+        padding:20px;
+    }
+
 }

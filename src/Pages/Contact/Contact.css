@@ -1,38 +1,210 @@
-.MainContactContainer{
-    padding: 0 15px 0 5px;
-}
-
 .ContactContainer{
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:60px;
 
-    align-items: center;
+    width:100%;
+    max-width:1000px;
+
+    margin:0 auto;
+    padding:100px 20px;
+
+    box-sizing:border-box;
 }
 
-.ContactIcon{
-    width: 40px;
-    height: 40px;
+/* ========================= */
+/* LEFT SIDE */
+/* ========================= */
 
-    color: var(--Red);
-
-    padding: 5px 10px 5px 0;
+.ContactInfo{
+    width:220px;
+    flex-shrink:0;
+    border-radius: 8px;
 }
 
-a:link {
-    color: var(--White);
-  }
+.ProfileImage{
+    width:100%;
+    display:block;
 
-  a:visited {
-    color: var(--Purple);
-  }
+    border-radius:4px;
+}
 
-  a:hover {
+.ContactDescription{
+    margin:22px 0;
+
+    line-height:1.5;
+    text-align:left;
+}
+
+.EmailContainer{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.EmailContainer a{
+    color:var(--White);
+    text-decoration:none;
+}
+
+.EmailContainer a:hover{
+    color:var(--Red);
+}
+
+.EmailIcon{
+    font-size:24px;
+}
+
+/* ========================= */
+/* FORM */
+/* ========================= */
+
+.ContactForm{
+
+    width:100%;
+    max-width:550px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+}
+
+.InputGroup{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8px;
+}
+
+.FullWidth{
+    grid-column:1/-1;
+}
+
+.InputGroup label{
+
+    color:var(--White);
+
+    font-size:18px;
+}
+
+.InputGroup input,
+.InputGroup textarea{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:12px;
+
+    background:transparent;
+
+    border:1px solid var(--Red);
+
+    color:var(--White);
+
+    outline:none;
+
+    font-size:16px;
+
+    resize:none;
+
+    transition:.25s;
+}
+
+.InputGroup input::placeholder,
+.InputGroup textarea::placeholder{
+
+    color:#d4d4d4;
+}
+
+.InputGroup input:focus,
+.InputGroup textarea:focus{
+
+    border-color:var(--Purple);
+}
+
+.ContactForm button{
+
+    height:50px;
+
+    border:none;
+
+    background:var(--Red);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.ContactForm button:hover{
+
+    background:#ff6549;
+}
+
+.SendButton {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    background: var(--Red);
+
+    color: white;
+    font-size: 18px;
+
+    cursor: pointer;
+    transition: .25s;
+}
+
+.SendButton:hover {
+    background: #ff6549;
+}
+
+ .GmailIcon{
+    height: 30px;
+    width: 30px;
     color: var(--Red);
-  }
+ }
 
-  @media  (min-width:768px) {
-    .MainContactContainer{
-        padding: 0 0 0 40px;
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    .ContactContainer{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:50px;
+    }
+
+    .ContactInfo{
+
+        width:100%;
+        max-width:320px;
+    }
+
+    .ContactForm{
+
+        width:100%;
+
+        grid-template-columns:1fr;
+    }
+
+    .FullWidth{
+        grid-column:auto;
     }
 
 }

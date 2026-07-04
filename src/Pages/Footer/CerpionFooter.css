@@ -6,13 +6,10 @@
     justify-content: flex-end; 
     align-items: center;
 
-
     color: var(--White);
+background-color: var(--Black);
 
     font-weight: lighter;
-
-    
-    
 }
 
  .Social{
@@ -30,14 +27,22 @@
 button {
     width: 40px;
     height: 40px;
-    background-color: var(--Black);
-    color: var(--White);
 
+    color: var(--White);
+    
+    background: none;
     border: none;
-    transition: background-color 0.3s;
  }
+
+.SocialIcon:hover {
+    color: var(--Red);
+    transform: scale(1.5);
+    transition: .3s;
+}
 
  .SocialIcon{
     height: 30px;
     width: 30px;
+
+    transition: .3s;
  }

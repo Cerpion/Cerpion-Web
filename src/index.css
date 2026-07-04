@@ -5,24 +5,10 @@
   --Blue: #5c6bc0ff;
   --Purple: #9146ffff;
 
-}
-
-html{
   min-height: 100vh;
-
-  margin: 0;
-  padding: 0;
-}
-
-#root{
-  min-height: 100vh;
-
-  margin: 0;
-  padding: 0;
 }
 
 body {
-  min-height: 100vh;
 
   margin: 0;
   padding: 0;
@@ -34,29 +20,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 h1{
+  font-size: 64px;
   color: var(--White);
-  font-weight: medium;
+  font-weight: bold;
 }
 
 h2{
+  font-size: 42px;
   color: var(--White);
-  font-weight: medium;
+  font-weight: bold;
 }
 
 
 h3{
+  font-size: 32px;
   color: var(--White);
   font-weight: medium;
   margin: 5px 0;
 }
 
 p{
+  font-size: 16px;
   color: var(--White);
   font-weight: normal;
   margin: 5px 0;
@@ -68,4 +53,15 @@ text{
   margin: 5px 0;
 
   text-align: justify;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.middle{
+ flex: 1;
+background-color: var(--Black);
 }

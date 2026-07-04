@@ -1,70 +1,50 @@
-.MobileGifContainer{
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.DesktopGifContainer{
-    width: 215px;
-    max-width: 100%;
-    position: relative;
-
-
-    box-sizing: border-box;
-    margin: 0 15px 0 0;
-
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.DesktopGif{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-}
-
-.MobileGif{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block ;
-}
-
-p{
-    text-align: justify;
-}
-
-.highlight {
-    color: var(--Red);
-    font-weight: bold;
-  }
-
-  
-.AboutMeContainer{
+.AboutMeContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 140px 20px;
+}
+
+.ImageContainer {
+    flex-shrink: 0;
+}
+
+.DesktopGifContainer {
+    width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.DesktopGif {
+    width: 100%;
+    display: block;
+}
+
+.TextContainer {
+    flex: 1;
+}
+
+.TextContainer h3 {
+    padding: 0;
+    margin-top: 0;
+}
+
+.TextContainer p {
+    line-height: 1.5;
+    text-align: justify;
+
 }
 
 
+@media (min-width: 768px) {
 
-@media  (min-width:768px) {
-    .DesktopGif {
-      display: block ;
-      
-    }
-  
-    .MobileGif {
-      display: none;
-    }
-
-    .AboutMeContainer{
+    .AboutMeContainer {
         flex-direction: row;
-
-        box-sizing: border-box;
-        padding: 15px 15px 0 0;
+        align-items: flex-start;
     }
-  }
+
+}
