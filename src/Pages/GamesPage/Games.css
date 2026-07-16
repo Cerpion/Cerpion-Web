@@ -214,11 +214,13 @@
 
 @media(max-width:600px){
 
+    /*
     .ProjectButtons{
 
         flex-direction:column;
     }
-
+    */
+    
     .ProjectHeader{
 
         padding:20px;

@@ -1,6 +1,5 @@
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
-import CrimsonSoul from "../../Components/CrimsonSoul_adaptive_fore.png";
 import { useLanguage } from "../../localization/LanguageContext";
 import { projects } from "../../Data/projects";
 

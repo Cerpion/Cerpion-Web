@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { projects } from "../../Data/projects";
 import "./Games.css";
-import Thumbnail from "../../Components/Games/CrimsonSoul/Banner.png";
 import { useLanguage } from "../../localization/LanguageContext";
 import { useNavigate } from "react-router-dom";
 

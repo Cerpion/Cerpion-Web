@@ -43,12 +43,12 @@
     gap:10px;
 }
 
-.EmailContainer a{
+.EmailContainer span{
     color:var(--White);
     text-decoration:none;
 }
 
-.EmailContainer a:hover{
+.EmailContainer span:hover{
     color:var(--Red);
 }
 
@@ -206,5 +206,24 @@
     .FullWidth{
         grid-column:auto;
     }
+}
 
+
+/* ========================= */
+/* MESSAGE */
+/* ========================= */
+.SuccessMessage {
+  color: var(--White);;
+  font-size: 0.95rem;
+  font-weight: 600;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.ErrorMessage {
+  color: var(--Red);
+  font-size: 0.95rem;
+  font-weight: 600;
+  grid-column: 1 / -1;
+  text-align: center;
 }

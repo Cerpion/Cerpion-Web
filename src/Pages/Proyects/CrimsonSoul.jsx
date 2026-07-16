@@ -1,10 +1,10 @@
 import "./CrimsonSoul.css";
-import Logo from "../../Components/Games/CrimsonSoul/Banner.png";
-import PlayStore from "../../Components/DownloadLinks/GooglePlayDownload.svg";
+import Logo from "../../assets/Projects/CrimsonSoul/Banner.png";
+import PlayStore from "../../assets/Projects/CrimsonSoul/GooglePlayDownload.svg";
 
-import Photo1 from "../../Components/Games/CrimsonSoul/Photo 1.png";
-import Photo2 from "../../Components/Games/CrimsonSoul/Photo 2.webp";
-import Photo3 from "../../Components/Games/CrimsonSoul/Photo 3.webp";
+import Photo1 from "../../assets/Projects/CrimsonSoul/Icon.png";
+import Photo2 from "../../assets/Projects/CrimsonSoul/Photo 2.webp";
+import Photo3 from "../../assets/Projects/CrimsonSoul/Photo 3.webp";
 
 const CrimsonSoul = () => {
   return (

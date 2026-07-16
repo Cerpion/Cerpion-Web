@@ -1,5 +1,5 @@
 import "./About.css";
-import AboutMeDesktop from "../../Components/Animated/Apear.gif";
+import AboutMeDesktop from "../../assets/AboutMe/Apear.gif";
 import { useLanguage } from "../../localization/LanguageContext";
 
 function About() {

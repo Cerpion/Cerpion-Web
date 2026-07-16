@@ -29,6 +29,9 @@
         "yourSubject": "Your Subject",
         "message": "Message",
         "messageIdea": "Tell me about your idea...",
-        "send": "Send Message"
+        "send": "Send Message",
+        "sending": "Sending...",
+        "success": "Your message has been sent successfully!",
+        "error": "An error occurred while sending the message."
     }
 }
