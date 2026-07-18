@@ -1,0 +1,185 @@
+{
+  "title": "Crimson Soul",
+
+  "description": "Crimson Soul is a fast-paced action RPG developed entirely as a solo project, featuring responsive combat, RPG progression, and increasingly challenging enemies. I was responsible for designing and implementing all core gameplay systems, creating visual effects, and developing the user interface.",
+
+  "highlights": [
+    "Created shaders and visual effects for gameplay.",
+    "Implemented combat feedback and hit effects.",
+    "Optimized gameplay systems and UI."
+  ],
+
+  "buttons": {
+    "viewProject": "View Project",
+    "play": "Play"
+  },
+
+  "hero": {
+    "eyebrow": "PERSONAL PROJECT / GAME DEVELOPMENT",
+    "description": "Crimson Soul is a fast-paced action game with RPG elements, developed from the ground up using Godot 4 and C#."
+  },
+
+  "tools": {
+    "label": "TOOLS & TECHNOLOGIES",
+    "title": "Built across multiple disciplines."
+  },
+
+  "project": {
+    "label": "THE PROJECT",
+    "title": "A project built through learning.",
+    "paragraph1": "Crimson Soul began as a personal project to learn Godot 4 and explore how far I could take a game developed primarily with C#.",
+    "paragraph2": "What started as a project to learn a new engine eventually became an exploration of programming, architecture, 3D modeling, mobile optimization, dynamic audio, UI, and online services."
+  },
+
+  "challenge": {
+    "label": "THE CHALLENGE",
+    "title": "A new engine. A different language.",
+    "paragraph1": "Godot 4 was a completely new engine for me. Additionally, I decided to use C# as my primary programming language, even though much of the engine's ecosystem and workflow is oriented around GDScript.",
+    "paragraph2": "This led me to research and build my own solutions for different systems throughout the project."
+  },
+
+  "characters": {
+    "label": "CHARACTER DEVELOPMENT",
+    "title": "Building the characters from scratch.",
+
+    "warrior": {
+      "title": "THE WARRIOR",
+      "paragraph": "The warrior is the main visual focus of the experience. Because of this, I used a bold and contrasting color palette to ensure that the character consistently stood out during gameplay."
+    },
+
+    "skulls": {
+      "title": "THE SKULLS",
+      "paragraph1": "For the enemies, I developed a toon-inspired design with a fantastical and supernatural aesthetic.",
+      "paragraph2": "The goal was to maintain a dark identity while using clean and minimalist shapes."
+    }
+  },
+
+  "prototype": {
+    "label": "FIRST PROTOTYPE",
+    "title": "The first prototype was entirely 3D.",
+    "paragraph1": "The initial goal was to create a 3D experience that could run on mobile devices.",
+    "paragraph2": "After completing the characters and a prototype environment, I created the first Android build."
+  },
+
+  "performance": {
+    "label": "THE PROBLEM",
+    "title": "Performance was not as expected.",
+
+    "problem": {
+      "number": "01",
+      "title": "The Problem",
+      "description": "The game's performance was too low when testing it on Android."
+    },
+
+    "investigation": {
+      "number": "02",
+      "title": "The Investigation",
+      "description": "I implemented a custom event system and an Object Pool to reduce unnecessary operations and better control object creation and reuse."
+    },
+
+    "discovery": {
+      "number": "03",
+      "title": "The Discovery",
+      "description": "The main bottleneck was not the code architecture, but the device's ability to render a 3D experience."
+    }
+  },
+
+  "strategy": {
+    "label": "CHANGE OF STRATEGY",
+    "title": "From 3D models to 2D sprites.",
+    "paragraph1": "I did not want to abandon the project or return to GDScript.",
+    "paragraph2": "I used the 3D models as a foundation to create sprites from different angles, using an approach similar to games that use pre-rendered 2D characters.",
+    "paragraph3": "I then adapted the existing programming to work with this new visual representation."
+  },
+
+  "architecture": {
+    "label": "ARCHITECTURE",
+    "title": "Custom systems to control the project.",
+
+    "eventSystem": {
+      "title": "EVENT SYSTEM",
+      "description": "I developed a custom event system to decouple different game systems and reduce unnecessary dependencies."
+    },
+
+    "objectPool": {
+      "title": "OBJECT POOL",
+      "description": "I implemented an Object Pool to reuse enemies and reduce the constant creation and destruction of objects during gameplay."
+    }
+  },
+
+  "music": {
+    "label": "DYNAMIC MUSIC",
+    "title": "The music progresses too.",
+    "paragraph1": "The music was created from scratch using Waveform 13.",
+    "paragraph2": "I divided the composition into different layers and instruments. As the player progressed, new instruments were gradually introduced into the main composition.",
+    "paragraph3": "This allowed the music to progressively increase in intensity alongside the difficulty and progression of the player."
+  },
+
+  "ui": {
+    "label": "UI DESIGN",
+    "title": "Designing an interface that belonged to the world.",
+    "paragraph1": "I designed the user interface in Inkscape, using the dark aesthetic and visual tones established for the game's world.",
+    "paragraph2": "I then brought these designs into the game and developed the different menus and interface elements.",
+    "designLabel": "DESIGN",
+    "implementationLabel": "IMPLEMENTATION"
+  },
+
+  "gameplayLoop": {
+    "label": "GAMEPLAY LOOP",
+    "title": "Combat, progression, and upgrades.",
+    "description": "Once the core combat system was working, I implemented the upgrade system and its interface to complete the game's main gameplay loop.",
+
+    "steps": {
+      "combat": "COMBAT",
+      "progress": "PROGRESSION",
+      "upgrade": "UPGRADE",
+      "repeat": "REPEAT"
+    }
+  },
+
+  "integrations": {
+    "label": "ANDROID INTEGRATION",
+    "title": "Integrating external services.",
+
+    "admob": {
+      "title": "GOOGLE ADMOB",
+      "description": "I integrated the Google AdMob API from scratch to implement monetization within the application."
+    },
+
+    "leaderboards": {
+      "title": "LEADERBOARDS",
+      "description": "I integrated Google's leaderboard functionality to allow players to compare their results."
+    }
+  },
+
+  "finalResult": {
+    "label": "FINAL RESULT",
+    "title": "A project that grew alongside my skills.",
+    "description": "After going through different technical and visual iterations, Crimson Soul became a project that combined programming, system design, 3D modeling, mobile optimization, audio, UI, and online services."
+  },
+
+  "learnings": {
+    "label": "WHAT I LEARNED",
+    "title": "The learning behind the project.",
+
+    "tags": [
+      "C#",
+      "Godot 4",
+      "Architecture",
+      "3D Modeling",
+      "Mobile Optimization",
+      "Dynamic Audio",
+      "UI",
+      "Android APIs",
+      "Online Services",
+      "Design Patterns"
+    ],
+
+    "conclusion": "One of the most important lessons I learned was that developing a game is not always about optimizing the same solution indefinitely. Sometimes, the best solution is to change the way the problem itself is approached."
+  },
+
+  "gallery": {
+    "label": "GALLERY",
+    "title": "Crimson Soul."
+  }
+}

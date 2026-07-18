@@ -1,0 +1,16 @@
+{
+  "title": "Crimson Soul",
+
+  "description": "Crimson Soul is a solo-developed fast-paced action RPG featuring responsive combat, RPG progression, and increasingly challenging enemies. I was responsible for designing and implementing every core gameplay system, creating visual effects, and building the user interface.",
+
+  "highlights": [
+    "Created shaders and visual effects for gameplay.",
+    "Implemented combat feedback and hit effects.",
+    "Optimized gameplay systems and UI."
+  ],
+
+  "buttons": {
+    "viewProject": "View Project",
+    "play": "Play"
+  }
+}

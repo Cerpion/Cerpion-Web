@@ -12,18 +12,18 @@ function About() {
       </div>
 
       <div className="TextContainer">
-        <h3>{texts.about.title}</h3>
+        <h3>{texts.common.about.title}</h3>
         <p>
-          {texts.about.paragraph1}
+          {texts.common.about.paragraph1}
           <br />
           <br />
-          {texts.about.paragraph2}
+          {texts.common.about.paragraph2}
           <br />
           <br />
-          {texts.about.paragraph3}
+          {texts.common.about.paragraph3}
           <br />
           <br />
-          {texts.about.paragraph4}
+          {texts.common.about.paragraph4}
         </p>
       </div>
     </div>

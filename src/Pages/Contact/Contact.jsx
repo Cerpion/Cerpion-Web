@@ -17,7 +17,7 @@ function Contact() {
       <div className="ContactInfo">
         <img src={ProfileImage} alt="Cerpion" className="ProfileImage" />
 
-        <p className="ContactDescription">{texts.contact.description}</p>
+        <p className="ContactDescription">{texts.common.contact.description}</p>
 
         <div
           className="EmailContainer"
@@ -30,42 +30,42 @@ function Contact() {
 
       <form className="ContactForm" onSubmit={handleSubmit}>
         <div className="InputGroup">
-          <label>{texts.contact.name}</label>
+          <label>{texts.common.contact.name}</label>
           <input
             type="text"
             name="name"
-            placeholder={texts.contact.yourName}
+            placeholder={texts.common.contact.yourName}
             required
           />
         </div>
 
         <div className="InputGroup">
-          <label>{texts.contact.email}</label>
+          <label>{texts.common.contact.email}</label>
           <input
             type="email"
             name="email"
-            placeholder={texts.contact.yourEmail}
+            placeholder={texts.common.contact.yourEmail}
             required
           />
         </div>
 
         <div className="InputGroup FullWidth">
-          <label>{texts.contact.subject}</label>
+          <label>{texts.common.contact.subject}</label>
           <input
             type="text"
             name="subject"
-            placeholder={texts.contact.subject}
+            placeholder={texts.common.contact.subject}
             required
           />
         </div>
 
         <div className="InputGroup FullWidth">
-          <label>{texts.contact.message}</label>
+          <label>{texts.common.contact.message}</label>
 
           <textarea
             rows="6"
             name="message"
-            placeholder={texts.contact.yourSubject}
+            placeholder={texts.common.contact.yourSubject}
             required
           />
         </div>
@@ -75,15 +75,17 @@ function Contact() {
           className="SendButton"
           disabled={state.submitting}
         >
-          {state.submitting ? texts.contact.sending : texts.contact.send}
+          {state.submitting
+            ? texts.common.contact.sending
+            : texts.common.contact.send}
         </button>
 
         {state.succeeded && (
-          <p className="SuccessMessage">{texts.contact.success}</p>
+          <p className="SuccessMessage">{texts.common.contact.success}</p>
         )}
 
         {state.errors?.length > 0 && (
-          <p className="ErrorMessage">{texts.contact.error}</p>
+          <p className="ErrorMessage">{texts.common.contact.error}</p>
         )}
       </form>
     </section>

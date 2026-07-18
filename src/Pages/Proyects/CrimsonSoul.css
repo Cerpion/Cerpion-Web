@@ -1,115 +1,956 @@
-.Title {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .Image {
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+.CrimsonSoul {
     width: 100%;
-    height: 125px;
-    overflow: hidden;
-  }
-  
-  .Image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  iframe {
-    width: 100vw;
-    height: 100vh;
-    border: none;
+    max-width: 100%;
+
+    overflow-x: hidden;
+
+    color: #f4ede5;
+}
+
+.CrimsonSoul *,
+.CrimsonSoul *::before,
+.CrimsonSoul *::after {
+    box-sizing: border-box;
+}
+
+.CrimsonSoul img {
     display: block;
-  }
-  
-  .Description {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 0 20px;
-    text-align: justify;
-  }
-  
-  .Features {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 0 20px;
-  }
-  
-  .Features h3 {
-    margin-bottom: 10px;
-  }
-  
-  .Features p {
-    margin-left: 20px;
-  }
-  
-  .Pictures {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 0 20px;
-  }
-  
-  .ImagesContainer {
+
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.CrimsonSoul h1,
+.CrimsonSoul h2,
+.CrimsonSoul h3 {
+    color: #f4ede5;
+}
+
+.CrimsonSoul p {
+    color: #d0c9c2;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   SECTION HEADERS
+===================================================== */
+
+.SectionHeader {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.SectionHeader span,
+.SectionLabel,
+.ProjectEyebrow {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #9a928a;
+
+    font-size: clamp(12px, 0.9vw, 16px);
+    font-weight: 600;
+
+    letter-spacing: 5px;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+}
+
+.SectionHeader h2 {
+    margin: 0;
+
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.05;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.ProjectHero {
+    width: 100%;
+
+    min-height: 800px;
+
+    padding: 100px 6%;
+
+    display: flex;
+    align-items: center;
+}
+
+.ProjectHeroContent {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .ImagesContainer img {
+
+    grid-template-columns:
+        minmax(0, 0.8fr)
+        minmax(0, 1.2fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.ProjectHeroText {
+    min-width: 0;
+}
+
+.ProjectHero h1 {
+    margin-bottom: 30px;
+
+    font-size: clamp(48px, 7vw, 110px);
+    line-height: 0.9;
+}
+
+.ProjectHero p {
+    max-width: 550px;
+
+    font-size: 18px;
+}
+
+.ProjectHeroMedia {
     width: 100%;
-    max-width: 300px;
+    min-width: 0;
+}
+
+.ProjectHeroMedia img {
+    width: 100%;
     height: auto;
+
+    border-radius: 18px;
+
     object-fit: cover;
-    border-radius: 10px;
-    margin: 0 auto; /* centrar si son más pequeñas */
-    display: block;
-  }
-  .DownloadLink {
-    text-align: center;
-    margin: 50px 0;
-  }
-  
-  .DownloadLink img {
-    width: 150px;  /* antes 100px */
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.ProjectButtons {
+    margin-top: 40px;
+}
+
+.ProjectButtons img {
+    width: 160px;
     height: auto;
-    margin-top: 10px;
+
     cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .DownloadLink img:hover {
-    transform: scale(1.1);
-  }
 
-  .GameVideoWrapper {
-    position: relative;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.ProjectButtons img:hover {
+    transform: scale(1.05);
+
+    opacity: 0.85;
+}
+
+
+/* =====================================================
+   TOOLS
+===================================================== */
+
+.ProjectTools {
     width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+}
+
+.ToolsGrid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.ToolCard {
+    min-width: 0;
+    min-height: 160px;
+
+    padding: 25px 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+
+    background-color: rgba(255, 255, 255, 0.015);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.ToolCard:hover {
+    transform: translateY(-6px);
+
+    background-color: rgba(255, 255, 255, 0.05);
+
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.ToolIcon {
+    width: 48px;
+    height: 48px;
+
+    color: #e8e1da;
+
+    fill: currentColor;
+
+    font-size: 48px;
+}
+
+.ToolCard span {
+    color: #d0c9c2;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   GENERAL TWO-COLUMN SECTION
+===================================================== */
+
+.ProjectSection {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.ProjectText {
+    min-width: 0;
+}
+
+.ProjectText h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(36px, 4vw, 60px);
+    line-height: 1.05;
+}
+
+.ProjectText p {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+}
+
+.ProjectMedia {
+    width: 100%;
+    min-width: 0;
+}
+
+.ProjectMedia img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 16px;
+}
+
+
+/* =====================================================
+   CHARACTER DEVELOPMENT
+===================================================== */
+
+.ProjectCharacters {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+}
+
+.CharacterGrid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+.CharacterCard {
+    min-width: 0;
+
     overflow: hidden;
-  }
-  
-  .GameVideoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 18px;
+}
+
+.CharacterViewerWrapper {
     width: 100%;
-    height: 100%;
-    border: none;
-  }
+    height: 550px;
+}
+
+.CharacterCardContent {
+    padding: 30px;
+}
+
+.CharacterCardContent h3 {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+.ProcessMedia {
+    width: 100%;
+
+    margin-top: 50px;
+}
+
+.ProcessMedia img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 16px;
+}
 
 
-  
-   
+/* =====================================================
+   FEATURE SECTIONS
+===================================================== */
 
-    @media  (min-width:768px) {
-      .ImagesContainer {
-        grid-template-columns: repeat(3, 1fr); /* 3 por fila */
-      }
+.ProjectFeature {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.ProjectFeatureReverse {
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+}
+
+.FeatureMedia {
+    width: 100%;
+    min-width: 0;
+}
+
+.FeatureMedia img,
+.FeatureMedia video {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 18px;
+}
+
+.FeatureText {
+    width: 100%;
+    min-width: 0;
+}
+
+.FeatureText h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(36px, 4vw, 60px);
+    line-height: 1.05;
+}
+
+.FeatureText p {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   PERFORMANCE PROBLEM
+===================================================== */
+
+.ProjectProblem {
+    width: 100%;
+
+    padding: 100px 6%;
+
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.ProblemHeader {
+    max-width: 900px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.ProblemHeader h2 {
+    margin: 0;
+
+    font-size: clamp(36px, 5vw, 70px);
+    line-height: 1;
+}
+
+.ProblemGrid {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.ProblemCard {
+    min-width: 0;
+
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 18px;
+}
+
+.ProblemNumber {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #6d6762;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.ProblemCard h3 {
+    margin-bottom: 20px;
+
+    font-size: 23px;
+}
+
+.ProblemCard img {
+    width: 100%;
+    height: auto;
+
+    margin-top: 30px;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   ARCHITECTURE
+===================================================== */
+
+.ProjectArchitecture {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+}
+
+.ArchitectureGrid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+.ArchitectureCard {
+    min-width: 0;
+
+    padding: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 18px;
+}
+
+.ArchitectureMedia {
+    margin-bottom: 25px;
+}
+
+.ArchitectureMedia img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+}
+
+
+/* =====================================================
+   UI DESIGN
+===================================================== */
+
+.ProjectUI {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+}
+
+.UIIntro {
+    width: 100%;
+    max-width: 800px;
+
+    margin-bottom: 60px;
+}
+
+.UIIntro h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 1;
+}
+
+.UIIntro p {
+    max-width: 650px;
+
+    margin-bottom: 20px;
+
+    font-size: 17px;
+}
+
+.UIComparison {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.UIComparisonItem {
+    min-width: 0;
+
+    padding: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 16px;
+}
+
+.UIComparisonItem span {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #6d6762;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.UIComparisonItem img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   GAMEPLAY LOOP
+===================================================== */
+
+.GameplayLoop {
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.GameplayLoop span {
+    padding: 10px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 100px;
+
+    color: #d0c9c2;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   INTEGRATIONS
+===================================================== */
+
+.IntegrationGrid {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+.IntegrationCard {
+    min-width: 0;
+
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 18px;
+}
+
+.IntegrationCard img {
+    width: 100%;
+    height: auto;
+
+    margin-top: 30px;
+
+    border-radius: 12px;
+}
+
+
+/* =====================================================
+   FINAL RESULT
+===================================================== */
+
+.FinalResult {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 120px 6%;
+}
+
+.FinalResultMedia {
+    width: 100%;
+
+    margin-bottom: 60px;
+}
+
+.FinalResultMedia img,
+.FinalResultMedia video {
+    width: 100%;
+    height: auto;
+
+    max-height: 700px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+.FinalResultText {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.FinalResultText h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(36px, 5vw, 70px);
+    line-height: 1;
+}
+
+
+/* =====================================================
+   LEARNINGS
+===================================================== */
+
+.ProjectLearnings {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+}
+
+.LearningTags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 60px;
+}
+
+.LearningTags span {
+    padding: 12px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 100px;
+
+    color: #d0c9c2;
+
+    font-size: 13px;
+}
+
+.LearningConclusion {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: #d0c9c2;
+
+    font-size: 21px;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.ProjectGallery {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+}
+
+.GalleryGrid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.GalleryGrid img {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 16 / 10;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .ToolsGrid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
     }
 
-    @media  (min-width:1024px) {
-      .Image {
-        height: 255px;
-      }
+    .ProjectHeroContent {
+        grid-template-columns:
+            minmax(0, 1fr);
     }
+
+    .ProjectHeroText {
+        max-width: 800px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .ProjectHero p {
+        margin: 0 auto;
+    }
+
+    .ProjectButtons {
+        display: flex;
+
+        justify-content: center;
+    }
+
+    .ProjectSection,
+    .ProjectFeature,
+    .ProjectFeatureReverse {
+        grid-template-columns:
+            minmax(0, 1fr);
+
+        gap: 50px;
+    }
+
+    .ProjectFeatureReverse .FeatureText {
+        order: 1;
+    }
+
+    .ProjectFeatureReverse .FeatureMedia {
+        order: 2;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .ProjectHero {
+        min-height: auto;
+
+        padding: 90px 20px;
+    }
+
+    .ProjectTools,
+    .ProjectSection,
+    .ProjectFeature,
+    .ProjectUI,
+    .ProjectCharacters,
+    .ProjectArchitecture,
+    .ProjectLearnings,
+    .ProjectGallery,
+    .FinalResult {
+        padding: 80px 20px;
+    }
+
+    .ProjectProblem {
+        padding: 80px 20px;
+    }
+
+    .ToolsGrid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .CharacterGrid,
+    .ProblemGrid,
+    .ArchitectureGrid,
+    .UIComparison,
+    .IntegrationGrid {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+    .CharacterViewerWrapper {
+        height: 450px;
+    }
+
+    .GalleryGrid {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .ProjectHero h1 {
+        font-size: 44px;
+    }
+
+    .ToolsGrid {
+        gap: 10px;
+    }
+
+    .ToolCard {
+        min-height: 120px;
+
+        padding: 15px 10px;
+    }
+
+    .ToolIcon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 40px;
+    }
+
+    .CharacterViewerWrapper {
+        height: 380px;
+    }
+
+}

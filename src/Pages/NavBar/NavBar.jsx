@@ -5,8 +5,7 @@ import Logo2 from "../../assets/IconsSVG/Cerpion Icon.svg";
 import "./NavBar.css";
 
 function NavBar() {
-  const { language, ToggleLanguage } = useLanguage();
-  const { texts } = useLanguage();
+  const { language, ToggleLanguage, texts } = useLanguage();
 
   return (
     <nav className="SideNav">
@@ -17,18 +16,18 @@ function NavBar() {
 
         <ul className="nav-links">
           <li>
-            <NavLink to="/about">{texts.navbar.about}</NavLink>
+            <NavLink to="/about">{texts.common.navbar.about}</NavLink>
           </li>
           <li>
             <NavLink to="/" end>
-              {texts.navbar.home}
+              {texts.common.navbar.home}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/games">{texts.navbar.projects}</NavLink>
+            <NavLink to="/games">{texts.common.navbar.projects}</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">{texts.navbar.contact}</NavLink>
+            <NavLink to="/contact">{texts.common.navbar.contact}</NavLink>
           </li>
         </ul>
 

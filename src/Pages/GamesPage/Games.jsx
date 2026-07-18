@@ -6,14 +6,15 @@ import { useNavigate } from "react-router-dom";
 
 function Games() {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
-  const { language } = useLanguage();
+  const { language, texts } = useLanguage();
+  const selectedProjectTexts = texts.projects[selectedProject.id];
   const navigate = useNavigate();
 
   return (
     <section className="ProjectsPage">
       <div className="ProjectViewer">
         <div className="ProjectHeader">
-          <h2>{selectedProject.translations.en.title}</h2>
+          <h2>{selectedProjectTexts.title}</h2>
 
           <div className="Tags">
             {selectedProject.tags.map((tag) => (
@@ -26,7 +27,7 @@ function Games() {
           <div className="VideoContainer">
             <iframe
               src={selectedProject.youtube}
-              title={selectedProject.translations.en.title}
+              title={selectedProjectTexts.title}
               allowFullScreen
             />
           </div>
@@ -34,14 +35,12 @@ function Games() {
           <div className="ProjectInfo">
             <h3>Description</h3>
 
-            <p>{selectedProject.translations[language].description}</p>
+            <p>{selectedProjectTexts.description}</p>
 
             <div className="Highlights">
-              {selectedProject.translations[language].highlights.map(
-                (highlight, index) => (
-                  <p key={index}>• {highlight}</p>
-                ),
-              )}
+              {selectedProjectTexts.highlights.map((highlight, index) => (
+                <p key={index}>• {highlight}</p>
+              ))}
             </div>
 
             <div className="ProjectButtons">
@@ -57,7 +56,7 @@ function Games() {
                     }
                   }}
                 >
-                  {button.text[language]}
+                  {selectedProjectTexts.buttons[button.id]}
                 </button>
               ))}
             </div>
@@ -66,22 +65,23 @@ function Games() {
       </div>
 
       <div className="ProjectsList">
-        {projects.map((project) => (
-          <button
-            key={project.id}
-            className={
-              selectedProject.id === project.id
-                ? "ProjectCard Active"
-                : "ProjectCard"
-            }
-            onClick={() => setSelectedProject(project)}
-          >
-            <img
-              src={project.image}
-              alt={project.translations[language].title}
-            />
-          </button>
-        ))}
+        {projects.map((project) => {
+          const projectTexts = texts.projects[project.id];
+
+          return (
+            <button
+              key={project.id}
+              className={
+                selectedProject.id === project.id
+                  ? "ProjectCard Active"
+                  : "ProjectCard"
+              }
+              onClick={() => setSelectedProject(project)}
+            >
+              <img src={project.image} alt={projectTexts.title} />
+            </button>
+          );
+        })}
       </div>
     </section>
   );

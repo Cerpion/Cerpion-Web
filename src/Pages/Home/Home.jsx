@@ -9,14 +9,16 @@ const Home = () => {
 
   return (
     <div className="HomeContainer">
-      <h1>{texts.home.title}</h1>
+      <h1>{texts.common.home.title}</h1>
 
-      <p>{texts.home.description}</p>
+      <p>{texts.common.home.description}</p>
 
       <div className="ProjectsContainer">
         {projects.map((project) => {
+          const projectTexts = texts.projects[project.id];
+
           const projectButton = project.buttons.find(
-            (button) => button.type === "internal",
+            (button) => button.id === "viewProject",
           );
 
           return (
@@ -25,7 +27,7 @@ const Home = () => {
               className="ProjectButton"
               onClick={() => navigate(projectButton.url)}
             >
-              <img src={project.image} alt={project.translations.en.title} />
+              <img src={project.image} alt={projectTexts.title} />
             </button>
           );
         })}
