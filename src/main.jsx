@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import { LanguageProvider } from "./localization/LanguageContext";
 
@@ -21,12 +21,14 @@ import CerpionFooter from "./Pages/Footer/CerpionFooter";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <LanguageProvider>
-      <Router basename="/Cerpion-Web/">
+      <Router>
         <div className="container">
           <NavBar />
+
           <div className="middle">
             <Routes>
               <Route path="/" element={<Home />} />
+
               <Route path="/Games" element={<Games />} />
               <Route path="/About" element={<About />} />
               <Route path="/Contact" element={<Contact />} />
@@ -36,6 +38,7 @@ createRoot(document.getElementById("root")).render(
               <Route path="/PanDeBonus" element={<PanDeBonus />} />
             </Routes>
           </div>
+
           <CerpionFooter />
         </div>
       </Router>
