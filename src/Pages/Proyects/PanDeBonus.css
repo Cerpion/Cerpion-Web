@@ -4,7 +4,10 @@
 
 .PanDeBonus {
     width: 100%;
-    max-width: 100%;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
 
     overflow-x: hidden;
 
@@ -17,16 +20,11 @@
     box-sizing: border-box;
 }
 
-.PanDeBonus img {
+.PanDeBonus img,
+.PanDeBonus video {
     display: block;
-
     max-width: 100%;
 }
-
-
-/* =====================================================
-   TEXT
-===================================================== */
 
 .PanDeBonus h1,
 .PanDeBonus h2,
@@ -36,13 +34,12 @@
 
 .PanDeBonus p {
     color: #d0c9c2;
-
     line-height: 1.7;
 }
 
 
 /* =====================================================
-   SHARED SECTION HEADERS
+   TEXT
 ===================================================== */
 
 .SectionHeader {
@@ -104,8 +101,7 @@
     display: grid;
 
     grid-template-columns:
-        minmax(0, 0.8fr)
-        minmax(0, 1.2fr);
+        minmax(0, 0.8fr) minmax(0, 1.2fr);
 
     align-items: center;
 
@@ -132,8 +128,6 @@
 .ProjectHeroMedia {
     width: 100%;
     min-width: 0;
-
-    margin: 0 auto;
 }
 
 .ProjectHeroMedia img,
@@ -171,7 +165,6 @@
 
 .ProjectButtons img:hover {
     transform: scale(1.05);
-
     opacity: 0.85;
 }
 
@@ -182,9 +175,6 @@
 
 .ProjectTools {
     width: 100%;
-    max-width: 1300px;
-
-    margin: 0 auto;
 
     padding: 100px 6%;
 }
@@ -262,24 +252,22 @@
 
 .ProjectSection {
     width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
 
     padding: 100px 6%;
 
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1fr)
-        minmax(0, 1fr);
+        minmax(0, 1fr) minmax(0, 1fr);
 
     align-items: center;
 
     gap: 80px;
 }
 
-.ProjectText {
+.ProjectText,
+.ProjectMedia {
+    width: 100%;
     min-width: 0;
 }
 
@@ -294,11 +282,6 @@
     margin-bottom: 20px;
 
     font-size: 16px;
-}
-
-.ProjectMedia {
-    width: 100%;
-    min-width: 0;
 }
 
 .ProjectMedia img,
@@ -320,14 +303,13 @@
 
 .ProjectCharacters {
     width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
 
     padding: 100px 6%;
 }
 
 .CharacterGrid {
+    width: 100%;
+
     display: grid;
 
     grid-template-columns:
@@ -374,17 +356,13 @@
 
 .ProjectFeature {
     width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
 
     padding: 100px 6%;
 
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1.1fr)
-        minmax(0, 0.9fr);
+        minmax(0, 1.1fr) minmax(0, 0.9fr);
 
     align-items: center;
 
@@ -393,11 +371,11 @@
 
 .ProjectFeatureReverse {
     grid-template-columns:
-        minmax(0, 0.9fr)
-        minmax(0, 1.1fr);
+        minmax(0, 0.9fr) minmax(0, 1.1fr);
 }
 
-.FeatureMedia {
+.FeatureMedia,
+.FeatureText {
     width: 100%;
     min-width: 0;
 }
@@ -412,11 +390,6 @@
     border-radius: 18px;
 
     object-fit: cover;
-}
-
-.FeatureText {
-    width: 100%;
-    min-width: 0;
 }
 
 .FeatureText h2 {
@@ -462,9 +435,6 @@
 
 .ProblemGrid {
     width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
 
     display: grid;
 
@@ -521,14 +491,13 @@
 
 .ProjectArchitecture {
     width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
 
     padding: 100px 6%;
 }
 
 .ArchitectureGrid {
+    width: 100%;
+
     display: grid;
 
     grid-template-columns:
@@ -572,9 +541,6 @@
 
 .FinalResult {
     width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
 
     padding: 120px 6%;
 }
@@ -619,9 +585,6 @@
 
 .ProjectLearnings {
     width: 100%;
-    max-width: 1200px;
-
-    margin: 0 auto;
 
     padding: 100px 6%;
 }
@@ -670,14 +633,13 @@
 
 .ProjectGallery {
     width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
 
     padding: 100px 6%;
 }
 
 .GalleryGrid {
+    width: 100%;
+
     display: grid;
 
     grid-template-columns:
@@ -742,7 +704,6 @@
     .ProjectFeatureReverse .FeatureMedia {
         order: 2;
     }
-
 }
 
 
@@ -755,7 +716,7 @@
     .ProjectHero {
         min-height: auto;
 
-        padding: 90px 20px;
+        padding: 80px 20px;
     }
 
     .ProjectTools,
@@ -766,11 +727,11 @@
     .ProjectLearnings,
     .ProjectGallery,
     .FinalResult {
-        padding: 80px 20px;
+        padding: 70px 20px;
     }
 
     .ProjectProblem {
-        padding: 80px 20px;
+        padding: 70px 20px;
     }
 
     .CharacterGrid,
@@ -788,7 +749,6 @@
         grid-template-columns:
             minmax(0, 1fr);
     }
-
 }
 
 
@@ -798,8 +758,27 @@
 
 @media (max-width: 480px) {
 
+    .ProjectHero {
+        padding: 60px 16px;
+    }
+
     .ProjectHero h1 {
         font-size: 44px;
+    }
+
+    .ProjectTools,
+    .ProjectSection,
+    .ProjectFeature,
+    .ProjectCharacters,
+    .ProjectArchitecture,
+    .ProjectLearnings,
+    .ProjectGallery,
+    .FinalResult {
+        padding: 60px 16px;
+    }
+
+    .ProjectProblem {
+        padding: 60px 16px;
     }
 
     .ToolsGrid {
@@ -835,4 +814,11 @@
         font-size: 38px;
     }
 
+    .SectionHeader h2 {
+        font-size: 38px;
+    }
+
+    .LearningConclusion {
+        font-size: 18px;
+    }
 }

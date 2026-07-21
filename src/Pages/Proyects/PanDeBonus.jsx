@@ -45,7 +45,7 @@ const PandeBonus = () => {
   const projectTexts = texts.projects["pan-de-bonus"];
 
   return (
-    <main className="PandeBonus">
+    <main className="PanDeBonus">
       {/* =====================================================
           1. HERO
       ===================================================== */}
