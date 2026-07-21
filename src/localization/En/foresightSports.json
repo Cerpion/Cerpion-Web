@@ -1,16 +1,109 @@
 {
-  "title": "Crimson Soul",
+  "title": "Foresight Sports",
 
-  "description": "Crimson Soul is a solo-developed fast-paced action RPG featuring responsive combat, RPG progression, and increasingly challenging enemies. I was responsible for designing and implementing every core gameplay system, creating visual effects, and building the user interface.",
+  "description": "I was responsible for the development and implementation of user interfaces for golf simulation applications. I worked on creating responsive interfaces, integrating new features, and optimizing the user experience using modern technologies.",
 
   "highlights": [
-    "Created shaders and visual effects for gameplay.",
-    "Implemented combat feedback and hit effects.",
-    "Optimized gameplay systems and UI."
+    "Developed user interfaces using NoesisGUI and C#.",
+    "Implemented new features and UI components.",
+    "Optimized performance and user experience."
   ],
 
   "buttons": {
     "viewProject": "View Project",
-    "play": "Play"
+    "play": "View Webpage"
+  },
+
+  "hero": {
+    "eyebrow": "PROFESSIONAL EXPERIENCE / UI DEVELOPMENT",
+    "title": "Foresight Sports",
+    "description": "During my experience at Foresight Sports, I primarily worked on developing user interfaces for a professional golf simulator using Unity, NoesisGUI, XAML, and an MVVM-based architecture."
+  },
+
+  "tools": {
+    "label": "TOOLS AND TECHNOLOGIES",
+    "title": "Built within a complex software ecosystem."
+  },
+
+  "project": {
+    "label": "THE PROJECT",
+    "title": "An experience unlike anything I had worked on before.",
+    "paragraph1": "After more than eight years of working with Unity, starting to work with NoesisGUI represented a new challenge for me. Although the project used Unity as its foundation, interfaces were created using XAML and an MVVM-based architecture.",
+    "paragraph2": "During my first few months, I quickly adapted to the existing ecosystem, the team's tools, and a large-scale codebase developed by people from different cultures and professional backgrounds."
+  },
+
+  "challenge": {
+    "label": "THE CHALLENGE",
+    "title": "Learning a new workflow in a short amount of time.",
+    "paragraph1": "NoesisGUI was a completely new technology for me. I had to quickly learn how to work with XAML, data binding, MVVM, and the specific architecture that the team had built around the project.",
+    "paragraph2": "I started by resolving small bugs while learning how the system worked. This allowed me to gradually become familiar with the existing codebase and begin working on features with greater responsibility."
+  },
+
+  "leaderboards": {
+    "label": "FIRST MAJOR CHALLENGE",
+    "title": "Building new interfaces for player data.",
+
+    "leaderboard": {
+      "title": "LEADERBOARD",
+      "description": "I developed a new leaderboard interface to display player results and allow score comparisons within the system."
+    },
+
+    "statistics": {
+      "title": "SHOT STATISTICS",
+      "description": "I also developed an interface to display statistics and detailed information associated with each shot taken by the player."
+    }
+  },
+
+  "clubSystem": {
+    "label": "SYSTEM REFACTORING",
+    "title": "Restructuring a system to make it extensible.",
+    "paragraph1": "One of the biggest challenges came with the expansion of the golf club system. The new functionality required multiple changes, but much of the existing logic and views were distributed across different scripts and presented maintenance issues.",
+    "paragraph2": "I restructured the system by applying better architectural and programming practices to make it clearer, more maintainable, and more extensible. This allowed the new features to be integrated without continuing to increase the complexity of the existing system."
+  },
+
+  "gc3": {
+    "label": "NEW RESPONSIBILITY",
+    "title": "A complete interface developed in one week.",
+    "paragraph1": "While continuing to work on new features for shot information, there was also a need to develop a configuration interface for the GC3 device.",
+    "paragraph2": "The task was originally planned to take approximately one month of work. Due to the need to complete the feature, I took responsibility for its development and managed to finish it in one week, delivering it within the required deadline."
+  },
+
+  "multiplayer": {
+    "label": "MULTIPLAYER SYSTEMS",
+    "title": "Designing interfaces for connected systems.",
+    "paragraph1": "My final major challenge was working on the interface for the multiplayer system. This involved understanding how different devices communicated and how the interface needed to react to changes occurring on both the client and server sides.",
+    "paragraph2": "This experience gave me a better understanding of the relationship between online systems and user interfaces, as well as the importance of designing UI that can correctly respond to different connection states and information flows."
+  },
+
+  "finalResult": {
+    "label": "FINAL RESULT",
+    "title": "An experience that expanded the way I work.",
+    "description": "My experience at Foresight Sports allowed me to work on a large-scale project, learn a new UI technology, and contribute to systems ranging from statistics tables and device configuration interfaces to multiplayer functionality."
+  },
+
+  "learnings": {
+    "label": "WHAT I LEARNED",
+
+    "title": "Beyond building interfaces.",
+
+    "tags": [
+      "Unity",
+      "NoesisGUI",
+      "XAML",
+      "MVVM",
+      "UI Architecture",
+      "C#",
+      "Git",
+      "Multiplayer Systems",
+      "Software Architecture",
+      "Refactoring"
+    ],
+
+    "conclusion": "One of the most important lessons I learned was that working on UI within a large project is not only about building visual interfaces. It also involves understanding the architecture, data flow, communication between systems, and how to create solutions that can be maintained and extended over time."
+  },
+
+  "gallery": {
+    "label": "GALLERY",
+    "title": "Foresight Sports."
   }
 }

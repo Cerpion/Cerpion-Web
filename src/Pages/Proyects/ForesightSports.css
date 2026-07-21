@@ -1,0 +1,692 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+.ForesightSports {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: hidden;
+
+    color: #f4ede5;
+}
+
+.ForesightSports *,
+.ForesightSports *::before,
+.ForesightSports *::after {
+    box-sizing: border-box;
+}
+
+.ForesightSports img {
+    display: block;
+
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.ForesightSports h1,
+.ForesightSports h2,
+.ForesightSports h3 {
+    color: #f4ede5;
+}
+
+.ForesightSports p {
+    color: #d0c9c2;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   SECTION HEADERS
+===================================================== */
+
+.ForesightSports .SectionHeader {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.ForesightSports .SectionHeader span,
+.ForesightSports .SectionLabel,
+.ForesightSports .ProjectEyebrow {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #9a928a;
+
+    font-size: clamp(12px, 0.9vw, 16px);
+    font-weight: 600;
+
+    letter-spacing: 5px;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+}
+
+.ForesightSports .SectionHeader h2 {
+    margin: 0;
+
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.05;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.ForesightSports .ProjectHero {
+    width: 100%;
+
+    min-height: 700px;
+
+    padding: 60px 6%;
+
+    display: flex;
+    align-items: center;
+}
+
+.ForesightSports .ProjectHeroContent {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.8fr)
+        minmax(0, 1.2fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.ForesightSports .ProjectHeroText {
+    min-width: 0;
+}
+
+.ForesightSports .ProjectHero h1 {
+    margin-bottom: 30px;
+
+    font-size: clamp(48px, 7vw, 110px);
+    line-height: 0.9;
+}
+
+.ForesightSports .ProjectHero p {
+    max-width: 550px;
+
+    font-size: 18px;
+}
+
+.ForesightSports .ProjectHeroMedia {
+    width: 80%;
+    min-width: 0;
+
+    margin: auto;
+}
+
+.ForesightSports .ProjectHeroMedia img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 18px;
+
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   TOOLS
+===================================================== */
+
+.ForesightSports .ProjectTools {
+    width: 100%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 60px 6%;
+}
+
+.ForesightSports .ToolsGrid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.ForesightSports .ToolCard {
+    min-width: 0;
+    min-height: 160px;
+
+    padding: 25px 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+
+    background-color: rgba(255, 255, 255, 0.015);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.ForesightSports .ToolCard:hover {
+    transform: translateY(-6px);
+
+    background-color: rgba(255, 255, 255, 0.05);
+
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.ForesightSports .ToolIcon {
+    width: 48px;
+    height: 48px;
+
+    color: #e8e1da;
+
+    fill: currentColor;
+
+    font-size: 48px;
+}
+
+.ForesightSports .ToolTextIcon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #e8e1da;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ForesightSports .ToolCard span {
+    color: #d0c9c2;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   GENERAL TWO-COLUMN SECTION
+===================================================== */
+
+.ForesightSports .ProjectSection {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.ForesightSports .ProjectText {
+    min-width: 0;
+}
+
+.ForesightSports .ProjectText h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(36px, 4vw, 60px);
+    line-height: 1.05;
+}
+
+.ForesightSports .ProjectText p {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+}
+
+.ForesightSports .ProjectMedia {
+    width: 100%;
+    min-width: 0;
+
+    height: 100%;
+    min-height: 0;
+}
+
+.ForesightSports .ProjectMedia img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 16px;
+
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   FEATURE SECTIONS
+===================================================== */
+
+.ForesightSports .ProjectFeature {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.ForesightSports .ProjectFeatureReverse {
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+}
+
+.ForesightSports .FeatureMedia {
+    width: 100%;
+    min-width: 0;
+
+    height: 100%;
+    min-height: 0;
+}
+
+.ForesightSports .FeatureMedia img,
+.ForesightSports .FeatureMedia video {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border-radius: 18px;
+
+    object-fit: cover;
+}
+
+.ForesightSports .FeatureText {
+    width: 100%;
+    min-width: 0;
+}
+
+.ForesightSports .FeatureText h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(36px, 4vw, 60px);
+    line-height: 1.05;
+}
+
+.ForesightSports .FeatureText p {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   LEADERBOARDS / FEATURE CARDS
+===================================================== */
+
+.ForesightSports .ProjectProblem {
+    width: 100%;
+
+    padding: 100px 6%;
+
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.ForesightSports .ProblemHeader {
+    max-width: 900px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.ForesightSports .ProblemHeader h2 {
+    margin: 0;
+
+    font-size: clamp(36px, 5vw, 70px);
+    line-height: 1;
+}
+
+.ForesightSports .ProblemGrid {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.ForesightSports .ProblemCard {
+    min-width: 0;
+
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 18px;
+}
+
+.ForesightSports .ProblemNumber {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #6d6762;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.ForesightSports .ProblemCard h3 {
+    margin-bottom: 20px;
+
+    font-size: 23px;
+}
+
+.ForesightSports .ProblemCard img {
+    width: 100%;
+    height: auto;
+
+    margin-top: 30px;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   FINAL RESULT
+===================================================== */
+
+.ForesightSports .FinalResult {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 120px 6%;
+}
+
+.ForesightSports .FinalResultMedia {
+    width: 100%;
+
+    margin-bottom: 60px;
+}
+
+.ForesightSports .FinalResultMedia img,
+.ForesightSports .FinalResultMedia video {
+    width: 100%;
+    height: auto;
+
+    max-height: 700px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+.ForesightSports .FinalResultText {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.ForesightSports .FinalResultText h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(36px, 5vw, 70px);
+    line-height: 1;
+}
+
+
+/* =====================================================
+   LEARNINGS
+===================================================== */
+
+.ForesightSports .ProjectLearnings {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+}
+
+.ForesightSports .LearningTags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 60px;
+}
+
+.ForesightSports .LearningTags span {
+    padding: 12px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 100px;
+
+    color: #d0c9c2;
+
+    font-size: 13px;
+}
+
+.ForesightSports .LearningConclusion {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: #d0c9c2;
+
+    font-size: 21px;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.ForesightSports .ProjectGallery {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+}
+
+.ForesightSports .GalleryGrid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.ForesightSports .GalleryGrid img {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 16 / 10;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .ForesightSports .ToolsGrid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .ForesightSports .ProjectHeroContent {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+    .ForesightSports .ProjectHeroText {
+        max-width: 800px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .ForesightSports .ProjectHero p {
+        margin: 0 auto;
+    }
+
+    .ForesightSports .ProjectSection,
+    .ForesightSports .ProjectFeature,
+    .ForesightSports .ProjectFeatureReverse {
+        grid-template-columns:
+            minmax(0, 1fr);
+
+        gap: 50px;
+    }
+
+    .ForesightSports .ProjectFeatureReverse .FeatureText {
+        order: 1;
+    }
+
+    .ForesightSports .ProjectFeatureReverse .FeatureMedia {
+        order: 2;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .ForesightSports .ProjectHero {
+        min-height: auto;
+
+        padding: 90px 20px;
+    }
+
+    .ForesightSports .ProjectTools,
+    .ForesightSports .ProjectSection,
+    .ForesightSports .ProjectFeature,
+    .ForesightSports .ProjectLearnings,
+    .ForesightSports .ProjectGallery,
+    .ForesightSports .FinalResult {
+        padding: 80px 20px;
+    }
+
+    .ForesightSports .ProjectProblem {
+        padding: 80px 20px;
+    }
+
+    .ForesightSports .ProblemGrid {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+    .ForesightSports .GalleryGrid {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .ForesightSports .ProjectHero h1 {
+        font-size: 44px;
+    }
+
+    .ForesightSports .ToolsGrid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .ForesightSports .ToolCard {
+        min-height: 120px;
+
+        padding: 15px 10px;
+    }
+
+    .ForesightSports .ToolIcon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 40px;
+    }
+
+    .ForesightSports .ToolTextIcon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+}

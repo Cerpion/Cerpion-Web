@@ -4,6 +4,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaItchIo } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function CerpionFooter() {
   return (
@@ -16,14 +18,34 @@ function CerpionFooter() {
         >
           <FaInstagram className="SocialIcon" />
         </button>
+
         <button onClick={() => window.open("https://x.com/CerpionX", "_blank")}>
           <FaXTwitter className="SocialIcon" />
         </button>
+
+        <button
+          onClick={() => window.open("https://github.com/Cerpion", "_blank")}
+        >
+          <FaGithub className="SocialIcon" />
+        </button>
+
         <button
           onClick={() => window.open("https://cerpion.itch.io/", "_blank")}
         >
           <FaItchIo className="SocialIcon" />
         </button>
+
+        <button
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/miguel-angel-torres-garcia-developer/",
+              "_blank",
+            )
+          }
+        >
+          <FaLinkedin className="SocialIcon" />
+        </button>
+
         <button
           onClick={() =>
             window.open(
@@ -34,6 +56,7 @@ function CerpionFooter() {
         >
           <FaTiktok className="SocialIcon" />
         </button>
+
         <button
           onClick={() =>
             window.open("https://www.youtube.com/@CerpionDev", "_blank")

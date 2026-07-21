@@ -12,32 +12,34 @@ import Skull from "../../assets/Models/CrimsonSoul/Skull.glb?url";
 // PLACEHOLDER IMAGES
 // =====================================================
 
-import PhotoPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/CharacterProcess.png";
-import CodePlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/CharacterProcess.png";
+import Intro from "../../assets/Projects/CrimsonSoul/References/Intro.gif";
 
-import Prototype3DPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/Prototype3D.gif";
+import Project from "../../assets/Projects/CrimsonSoul/References/Project.png";
+import Challenge from "../../assets/Projects/CrimsonSoul/References/Challenge.png";
 
-import PerformanceProblemPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/PerformanceProblem.gif";
+import Prototype from "../../assets/Projects/CrimsonSoul/References/Prototype3D.gif";
 
-import CharacterProcessPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/CharacterProcess.png";
+import Problem from "../../assets/Projects/CrimsonSoul/References/PerformanceProblem.gif";
+import Investigation from "../../assets/Projects/CrimsonSoul/References/Investigation.png";
+import Discovery from "../../assets/Projects/CrimsonSoul/References/Discovery.png";
 
-import SpriteConversionPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/3DTo2D.gif";
+import DimensionChange from "../../assets/Projects/CrimsonSoul/References/3DTo2D.gif";
 
-import EventSystemPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/EventSystem.png";
+import EventSystem from "../../assets/Projects/CrimsonSoul/References/EventSystem.png";
+import ObjectPool from "../../assets/Projects/CrimsonSoul/References/ObjectPool.png";
 
-import ObjectPoolPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/ObjectPool.png";
+import DynamicMusic from "../../assets/Projects/CrimsonSoul/References/DynamicMusic.png";
 
-import DynamicMusicPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/DynamicMusic.png";
+import UIDesign from "../../assets/Projects/CrimsonSoul/References/UIDesign.png";
+import UIImplementation from "../../assets/Projects/CrimsonSoul/References/UIImplementation.png";
 
-import UIDesignPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/UIDesign.png";
+import UIUpgradeSystem from "../../assets/Projects/CrimsonSoul/References/UIUpgrades.png";
 
-import UpgradeSystemPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/Upgrades.gif";
+import AdMob from "../../assets/Projects/CrimsonSoul/References/AdMob.png";
+import Leaderboard from "../../assets/Projects/CrimsonSoul/References/Leaderboard.png";
 
-import AdMobPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/AdMob.gif";
-
-import LeaderboardPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/Leaderboard.png";
-
-import FinalGameplayPlaceholder from "../../assets/Projects/CrimsonSoul/Placeholders/FinalGameplay.gif";
+import FinalGameplay from "../../assets/Projects/CrimsonSoul/References/FinalGameplay.gif";
+import Final from "../../assets/Projects/CrimsonSoul/References/Final.png";
 
 // =====================================================
 // SOFTWARE ICONS
@@ -47,7 +49,7 @@ import { SiGodotengine } from "react-icons/si";
 import { SiBlender } from "react-icons/si";
 import { SiInkscape } from "react-icons/si";
 import { SiAndroid } from "react-icons/si";
-import { TbBrandCSharp } from "react-icons/tb";
+import { PiFileCSharp } from "react-icons/pi";
 import { PiWaveform } from "react-icons/pi";
 
 const CrimsonSoul = () => {
@@ -81,7 +83,7 @@ const CrimsonSoul = () => {
           </div>
 
           <div className="ProjectHeroMedia">
-            <img src={FinalGameplayPlaceholder} alt="Crimson Soul gameplay" />
+            <img src={Intro} alt="Crimson Soul gameplay" />
           </div>
         </div>
       </section>
@@ -104,7 +106,7 @@ const CrimsonSoul = () => {
           </div>
 
           <div className="ToolCard">
-            <TbBrandCSharp className="ToolIcon" />
+            <PiFileCSharp className="ToolIcon" />
             <span>C#</span>
           </div>
 
@@ -143,7 +145,7 @@ const CrimsonSoul = () => {
         </div>
 
         <div className="ProjectMedia">
-          <img src={PhotoPlaceholder} alt="Crimson Soul project" />
+          <img src={Project} alt="Crimson Soul project" />
         </div>
       </section>
 
@@ -153,7 +155,7 @@ const CrimsonSoul = () => {
 
       <section className="ProjectSection ProjectChallenge">
         <div className="ProjectMedia">
-          <img src={CodePlaceholder} alt="C# architecture in Godot" />
+          <img src={Challenge} alt="C# architecture in Godot" />
         </div>
 
         <div className="ProjectText">
@@ -208,12 +210,12 @@ const CrimsonSoul = () => {
           </article>
         </div>
 
-        <div className="ProcessMedia">
+        {/* <div className="ProcessMedia">
           <img
             src={CharacterProcessPlaceholder}
             alt="Character development process"
           />
-        </div>
+        </div>*/}
       </section>
 
       {/* =====================================================
@@ -222,7 +224,7 @@ const CrimsonSoul = () => {
 
       <section className="ProjectFeature">
         <div className="FeatureMedia">
-          <img src={Prototype3DPlaceholder} alt="Crimson Soul 3D prototype" />
+          <img src={Prototype} alt="Crimson Soul 3D prototype" />
         </div>
 
         <div className="FeatureText">
@@ -253,10 +255,7 @@ const CrimsonSoul = () => {
             <h3>{projectTexts.performance.problem.title}</h3>
             <p>{projectTexts.performance.problem.description}</p>
 
-            <img
-              src={PerformanceProblemPlaceholder}
-              alt="Performance problem"
-            />
+            <img src={Problem} alt="Performance problem" />
           </div>
 
           <div className="ProblemCard">
@@ -267,7 +266,7 @@ const CrimsonSoul = () => {
             <h3>{projectTexts.performance.investigation.title}</h3>
             <p>{projectTexts.performance.investigation.description}</p>
 
-            <img src={ObjectPoolPlaceholder} alt="Object Pool" />
+            <img src={Investigation} alt="Object Pool" />
           </div>
 
           <div className="ProblemCard">
@@ -277,6 +276,8 @@ const CrimsonSoul = () => {
 
             <h3>{projectTexts.performance.discovery.title}</h3>
             <p>{projectTexts.performance.discovery.description}</p>
+
+            <img src={Discovery} alt="Object Pool" />
           </div>
         </div>
       </section>
@@ -296,10 +297,7 @@ const CrimsonSoul = () => {
         </div>
 
         <div className="FeatureMedia">
-          <img
-            src={SpriteConversionPlaceholder}
-            alt="3D to 2D sprite conversion"
-          />
+          <img src={DimensionChange} alt="3D to 2D sprite conversion" />
         </div>
       </section>
 
@@ -317,7 +315,7 @@ const CrimsonSoul = () => {
         <div className="ArchitectureGrid">
           <article className="ArchitectureCard">
             <div className="ArchitectureMedia">
-              <img src={EventSystemPlaceholder} alt="Event System" />
+              <img src={EventSystem} alt="Event System" />
             </div>
 
             <h3>{projectTexts.architecture.eventSystem.title}</h3>
@@ -326,7 +324,7 @@ const CrimsonSoul = () => {
 
           <article className="ArchitectureCard">
             <div className="ArchitectureMedia">
-              <img src={ObjectPoolPlaceholder} alt="Object Pool" />
+              <img src={ObjectPool} alt="Object Pool" />
             </div>
 
             <h3>{projectTexts.architecture.objectPool.title}</h3>
@@ -341,7 +339,7 @@ const CrimsonSoul = () => {
 
       <section className="ProjectFeature">
         <div className="FeatureMedia">
-          <img src={DynamicMusicPlaceholder} alt="Dynamic music system" />
+          <img src={DynamicMusic} alt="Dynamic music system" />
         </div>
 
         <div className="FeatureText">
@@ -372,13 +370,13 @@ const CrimsonSoul = () => {
           <div className="UIComparisonItem">
             <span> {projectTexts.ui.designLabel}</span>
 
-            <img src={UIDesignPlaceholder} alt="UI design" />
+            <img src={UIDesign} alt="UI design" />
           </div>
 
           <div className="UIComparisonItem">
             <span>{projectTexts.ui.implementationLabel}</span>
 
-            <img src={UIDesignPlaceholder} alt="UI implementation" />
+            <img src={UIImplementation} alt="UI implementation" />
           </div>
         </div>
       </section>
@@ -406,7 +404,7 @@ const CrimsonSoul = () => {
         </div>
 
         <div className="FeatureMedia">
-          <img src={UpgradeSystemPlaceholder} alt="Upgrade system" />
+          <img src={UIUpgradeSystem} alt="Upgrade system" />
         </div>
       </section>
 
@@ -428,13 +426,13 @@ const CrimsonSoul = () => {
             <h3>{projectTexts.integrations.admob.title}</h3>
             <p>{projectTexts.integrations.admob.description}</p>
 
-            <img src={AdMobPlaceholder} alt="Google AdMob integration" />
+            <img src={AdMob} alt="Google AdMob integration" />
           </div>
 
           <div className="IntegrationCard">
             <h3>{projectTexts.integrations.leaderboards.title}</h3>
             <p>{projectTexts.integrations.leaderboards.description}</p>
-            <img src={LeaderboardPlaceholder} alt="Global leaderboard" />
+            <img src={Leaderboard} alt="Global leaderboard" />
           </div>
         </div>
       </section>
@@ -445,10 +443,7 @@ const CrimsonSoul = () => {
 
       <section className="FinalResult">
         <div className="FinalResultMedia">
-          <img
-            src={FinalGameplayPlaceholder}
-            alt="Final Crimson Soul gameplay"
-          />
+          <img src={Final} alt="Final Crimson Soul gameplay" />
         </div>
 
         <div className="FinalResultText">
@@ -492,11 +487,11 @@ const CrimsonSoul = () => {
         </div>
 
         <div className="GalleryGrid">
-          <img src={CodePlaceholder} alt="Crimson Soul screenshot" />
+          <img src={Challenge} alt="Crimson Soul screenshot" />
 
-          <img src={CodePlaceholder} alt="Crimson Soul screenshot" />
+          <img src={EventSystem} alt="Crimson Soul screenshot" />
 
-          <img src={CodePlaceholder} alt="Crimson Soul screenshot" />
+          <img src={DynamicMusic} alt="Crimson Soul screenshot" />
         </div>
       </section>
     </main>

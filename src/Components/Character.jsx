@@ -70,7 +70,7 @@ const Character = forwardRef(
       const position = geometry.attributes.position;
       const normal = geometry.attributes.normal;
 
-      const offset = 0.002;
+      const offset = 0.001;
 
       const vertex = new THREE.Vector3();
       const vertexNormal = new THREE.Vector3();

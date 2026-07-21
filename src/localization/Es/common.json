@@ -8,7 +8,8 @@
 
     "home": {
         "title": "DESARROLLADOR INDIE",
-        "description": "Creo sistemas de gameplay, efectos visuales y herramientas que dan vida a nuevas ideas. Inspirado por los videojuegos con los que crecí, creo que incluso las experiencias más sencillas pueden convertirse en algo inolvidable cuando están hechas con dedicación, creatividad y atención al detalle."
+        "intro": "Soy Miguel Ángel, aunque en el mundo del desarrollo indie también me conocen como Cerpion.",
+        "description": "Soy un desarrollador de videojuegos enfocado en programación y con un creciente interés en el área de Technical Art. Me gusta combinar programación, arte 3D y herramientas para crear sistemas, efectos visuales y experiencias interactivas. Actualmente, continúo desarrollando mis habilidades para trabajar en la intersección entre el arte y la tecnología."
     },
 
     "about": {
@@ -16,7 +17,9 @@
         "paragraph1": "Después de muchos años aprendiendo, experimentando y enfrentándome a mis propias dudas, decidí empezar a crear los videojuegos que siempre imaginé.",
         "paragraph2": "Soy Miguel Ángel, o Cerpion en el mundo del desarrollo indie. Creo que una experiencia tranquila, creada con dedicación y cariño, puede convertirse en algo realmente único.",
         "paragraph3": "Todo comenzó cuando jugué Final Fantasy IX siendo niño. Ver el amor y la creatividad con los que fue creado despertó en mí el deseo de hacer juegos que transmitan esa misma sensación de asombro y belleza.",
-        "paragraph4": "Hoy, cada proyecto es un paso más en ese camino. Espero que me acompañes en esta aventura y descubras conmigo, proyecto a proyecto, nuevas experiencias memorables."
+        "paragraph4": "Hoy, cada proyecto es un paso más en ese camino. Espero que me acompañes en esta aventura y descubras conmigo, proyecto a proyecto, nuevas experiencias memorables.",
+        "summary": "Desarrollador de videojuegos especializado en C#, gameplay, UI y herramientas. Me interesa construir sistemas sólidos, resolver problemas complejos y conectar programación, diseño y tecnología para crear mejores experiencias de juego.",
+        "downloadCV": "Descargar CV"
     },
 
     "contact": {
@@ -33,5 +36,6 @@
     "sending": "Envíando...",
     "success": "Your message has been sent successfully!",
     "error": "An error occurred while sending the message."
+
   }
 }

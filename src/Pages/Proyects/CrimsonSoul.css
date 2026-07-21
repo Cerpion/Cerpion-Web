@@ -2,7 +2,7 @@
    GLOBAL
 ===================================================== */
 
-.CrimsonSoul {
+.PandeBonus {
     width: 100%;
     max-width: 100%;
 
@@ -11,13 +11,13 @@
     color: #f4ede5;
 }
 
-.CrimsonSoul *,
-.CrimsonSoul *::before,
-.CrimsonSoul *::after {
+.PandeBonus *,
+.PandeBonus *::before,
+.PandeBonus *::after {
     box-sizing: border-box;
 }
 
-.CrimsonSoul img {
+.PandeBonus img {
     display: block;
 
     max-width: 100%;
@@ -28,13 +28,13 @@
    TEXT
 ===================================================== */
 
-.CrimsonSoul h1,
-.CrimsonSoul h2,
-.CrimsonSoul h3 {
+.PandeBonus h1,
+.PandeBonus h2,
+.PandeBonus h3 {
     color: #f4ede5;
 }
 
-.CrimsonSoul p {
+.PandeBonus p {
     color: #d0c9c2;
 
     line-height: 1.7;
@@ -45,7 +45,7 @@
    SECTION HEADERS
 ===================================================== */
 
-.SectionHeader {
+.PandeBonus .SectionHeader {
     width: 100%;
     max-width: 900px;
 
@@ -54,9 +54,9 @@
     text-align: center;
 }
 
-.SectionHeader span,
-.SectionLabel,
-.ProjectEyebrow {
+.PandeBonus .SectionHeader span,
+.PandeBonus .SectionLabel,
+.PandeBonus .ProjectEyebrow {
     display: block;
 
     margin-bottom: 25px;
@@ -72,7 +72,7 @@
     text-transform: uppercase;
 }
 
-.SectionHeader h2 {
+.PandeBonus .SectionHeader h2 {
     margin: 0;
 
     font-size: clamp(36px, 5vw, 64px);
@@ -84,18 +84,18 @@
    HERO
 ===================================================== */
 
-.ProjectHero {
+.PandeBonus .ProjectHero {
     width: 100%;
 
-    min-height: 800px;
+    min-height: 700px;
 
-    padding: 100px 6%;
+    padding: 60px 6%;
 
     display: flex;
     align-items: center;
 }
 
-.ProjectHeroContent {
+.PandeBonus .ProjectHeroContent {
     width: 100%;
     max-width: 1400px;
 
@@ -112,29 +112,31 @@
     gap: 70px;
 }
 
-.ProjectHeroText {
+.PandeBonus .ProjectHeroText {
     min-width: 0;
 }
 
-.ProjectHero h1 {
+.PandeBonus .ProjectHero h1 {
     margin-bottom: 30px;
 
     font-size: clamp(48px, 7vw, 110px);
     line-height: 0.9;
 }
 
-.ProjectHero p {
+.PandeBonus .ProjectHero p {
     max-width: 550px;
 
     font-size: 18px;
 }
 
-.ProjectHeroMedia {
-    width: 100%;
+.PandeBonus .ProjectHeroMedia {
+    width: 80%;
     min-width: 0;
+
+    margin: auto;
 }
 
-.ProjectHeroMedia img {
+.PandeBonus .ProjectHeroMedia img {
     width: 100%;
     height: auto;
 
@@ -145,56 +147,33 @@
 
 
 /* =====================================================
-   BUTTONS
-===================================================== */
-
-.ProjectButtons {
-    margin-top: 40px;
-}
-
-.ProjectButtons img {
-    width: 160px;
-    height: auto;
-
-    cursor: pointer;
-
-    transition:
-        transform 0.2s ease,
-        opacity 0.2s ease;
-}
-
-.ProjectButtons img:hover {
-    transform: scale(1.05);
-
-    opacity: 0.85;
-}
-
-
-/* =====================================================
    TOOLS
 ===================================================== */
 
-.ProjectTools {
+.PandeBonus .ProjectTools {
     width: 100%;
     max-width: 1300px;
 
     margin: 0 auto;
 
-    padding: 100px 6%;
+    padding: 60px 6%;
 }
 
-.ToolsGrid {
+.PandeBonus .ToolsGrid {
     width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
 
     display: grid;
 
     grid-template-columns:
-        repeat(6, minmax(0, 1fr));
+        repeat(3, minmax(0, 1fr));
 
     gap: 16px;
 }
 
-.ToolCard {
+.PandeBonus .ToolCard {
     min-width: 0;
     min-height: 160px;
 
@@ -220,7 +199,7 @@
         border-color 0.25s ease;
 }
 
-.ToolCard:hover {
+.PandeBonus .ToolCard:hover {
     transform: translateY(-6px);
 
     background-color: rgba(255, 255, 255, 0.05);
@@ -228,7 +207,7 @@
     border-color: rgba(255, 255, 255, 0.35);
 }
 
-.ToolIcon {
+.PandeBonus .ToolIcon {
     width: 48px;
     height: 48px;
 
@@ -239,7 +218,7 @@
     font-size: 48px;
 }
 
-.ToolCard span {
+.PandeBonus .ToolCard span {
     color: #d0c9c2;
 
     font-size: 12px;
@@ -250,10 +229,10 @@
 
 
 /* =====================================================
-   GENERAL TWO-COLUMN SECTION
+   GENERAL TWO-COLUMN SECTIONS
 ===================================================== */
 
-.ProjectSection {
+.PandeBonus .ProjectSection {
     width: 100%;
     max-width: 1400px;
 
@@ -272,33 +251,38 @@
     gap: 80px;
 }
 
-.ProjectText {
+.PandeBonus .ProjectText {
     min-width: 0;
 }
 
-.ProjectText h2 {
+.PandeBonus .ProjectText h2 {
     margin-bottom: 30px;
 
     font-size: clamp(36px, 4vw, 60px);
     line-height: 1.05;
 }
 
-.ProjectText p {
+.PandeBonus .ProjectText p {
     margin-bottom: 20px;
 
     font-size: 16px;
 }
 
-.ProjectMedia {
+.PandeBonus .ProjectMedia {
     width: 100%;
     min-width: 0;
+
+    height: 100%;
+    min-height: 0;
 }
 
-.ProjectMedia img {
+.PandeBonus .ProjectMedia img {
     width: 100%;
-    height: auto;
+    height: 100%;
 
     border-radius: 16px;
+
+    object-fit: cover;
 }
 
 
@@ -306,7 +290,7 @@
    CHARACTER DEVELOPMENT
 ===================================================== */
 
-.ProjectCharacters {
+.PandeBonus .ProjectCharacters {
     width: 100%;
     max-width: 1400px;
 
@@ -315,7 +299,7 @@
     padding: 100px 6%;
 }
 
-.CharacterGrid {
+.PandeBonus .CharacterGrid {
     display: grid;
 
     grid-template-columns:
@@ -324,7 +308,7 @@
     gap: 30px;
 }
 
-.CharacterCard {
+.PandeBonus .CharacterCard {
     min-width: 0;
 
     overflow: hidden;
@@ -334,32 +318,19 @@
     border-radius: 18px;
 }
 
-.CharacterViewerWrapper {
+.PandeBonus .CharacterViewerWrapper {
     width: 100%;
     height: 550px;
 }
 
-.CharacterCardContent {
+.PandeBonus .CharacterCardContent {
     padding: 30px;
 }
 
-.CharacterCardContent h3 {
+.PandeBonus .CharacterCardContent h3 {
     margin-bottom: 15px;
 
     font-size: 24px;
-}
-
-.ProcessMedia {
-    width: 100%;
-
-    margin-top: 50px;
-}
-
-.ProcessMedia img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 16px;
 }
 
 
@@ -367,7 +338,7 @@
    FEATURE SECTIONS
 ===================================================== */
 
-.ProjectFeature {
+.PandeBonus .ProjectFeature {
     width: 100%;
     max-width: 1400px;
 
@@ -386,40 +357,45 @@
     gap: 80px;
 }
 
-.ProjectFeatureReverse {
+.PandeBonus .ProjectFeatureReverse {
     grid-template-columns:
         minmax(0, 0.9fr)
         minmax(0, 1.1fr);
 }
 
-.FeatureMedia {
+.PandeBonus .FeatureMedia {
     width: 100%;
     min-width: 0;
+
+    height: 100%;
+    min-height: 0;
 }
 
-.FeatureMedia img,
-.FeatureMedia video {
+.PandeBonus .FeatureMedia img,
+.PandeBonus .FeatureMedia video {
     width: 100%;
-    height: auto;
+    height: 100%;
 
     display: block;
 
     border-radius: 18px;
+
+    object-fit: cover;
 }
 
-.FeatureText {
+.PandeBonus .FeatureText {
     width: 100%;
     min-width: 0;
 }
 
-.FeatureText h2 {
+.PandeBonus .FeatureText h2 {
     margin-bottom: 30px;
 
     font-size: clamp(36px, 4vw, 60px);
     line-height: 1.05;
 }
 
-.FeatureText p {
+.PandeBonus .FeatureText p {
     margin-bottom: 20px;
 
     font-size: 16px;
@@ -427,10 +403,10 @@
 
 
 /* =====================================================
-   PERFORMANCE PROBLEM
+   ORDERS / GAMEPLAY LOOP
 ===================================================== */
 
-.ProjectProblem {
+.PandeBonus .ProjectProblem {
     width: 100%;
 
     padding: 100px 6%;
@@ -438,7 +414,7 @@
     background-color: rgba(0, 0, 0, 0.12);
 }
 
-.ProblemHeader {
+.PandeBonus .ProblemHeader {
     max-width: 900px;
 
     margin: 0 auto 60px;
@@ -446,14 +422,14 @@
     text-align: center;
 }
 
-.ProblemHeader h2 {
+.PandeBonus .ProblemHeader h2 {
     margin: 0;
 
     font-size: clamp(36px, 5vw, 70px);
     line-height: 1;
 }
 
-.ProblemGrid {
+.PandeBonus .ProblemGrid {
     width: 100%;
     max-width: 1400px;
 
@@ -467,7 +443,7 @@
     gap: 25px;
 }
 
-.ProblemCard {
+.PandeBonus .ProblemCard {
     min-width: 0;
 
     padding: 30px;
@@ -477,7 +453,7 @@
     border-radius: 18px;
 }
 
-.ProblemNumber {
+.PandeBonus .ProblemNumber {
     display: block;
 
     margin-bottom: 25px;
@@ -489,13 +465,13 @@
     letter-spacing: 3px;
 }
 
-.ProblemCard h3 {
+.PandeBonus .ProblemCard h3 {
     margin-bottom: 20px;
 
     font-size: 23px;
 }
 
-.ProblemCard img {
+.PandeBonus .ProblemCard img {
     width: 100%;
     height: auto;
 
@@ -506,10 +482,10 @@
 
 
 /* =====================================================
-   ARCHITECTURE
+   VISUAL EFFECTS / ANIMATION
 ===================================================== */
 
-.ProjectArchitecture {
+.PandeBonus .ProjectArchitecture {
     width: 100%;
     max-width: 1400px;
 
@@ -518,7 +494,7 @@
     padding: 100px 6%;
 }
 
-.ArchitectureGrid {
+.PandeBonus .ArchitectureGrid {
     display: grid;
 
     grid-template-columns:
@@ -527,7 +503,7 @@
     gap: 30px;
 }
 
-.ArchitectureCard {
+.PandeBonus .ArchitectureCard {
     min-width: 0;
 
     padding: 25px;
@@ -537,154 +513,13 @@
     border-radius: 18px;
 }
 
-.ArchitectureMedia {
+.PandeBonus .ArchitectureMedia {
     margin-bottom: 25px;
 }
 
-.ArchitectureMedia img {
+.PandeBonus .ArchitectureMedia img {
     width: 100%;
     height: auto;
-
-    border-radius: 12px;
-}
-
-
-/* =====================================================
-   UI DESIGN
-===================================================== */
-
-.ProjectUI {
-    width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
-
-    padding: 100px 6%;
-}
-
-.UIIntro {
-    width: 100%;
-    max-width: 800px;
-
-    margin-bottom: 60px;
-}
-
-.UIIntro h2 {
-    margin-bottom: 30px;
-
-    font-size: clamp(40px, 5vw, 72px);
-    line-height: 1;
-}
-
-.UIIntro p {
-    max-width: 650px;
-
-    margin-bottom: 20px;
-
-    font-size: 17px;
-}
-
-.UIComparison {
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-    gap: 25px;
-}
-
-.UIComparisonItem {
-    min-width: 0;
-
-    padding: 18px;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-
-    border-radius: 16px;
-}
-
-.UIComparisonItem span {
-    display: block;
-
-    margin-bottom: 20px;
-
-    color: #6d6762;
-
-    font-size: 10px;
-
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-
-.UIComparisonItem img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 10px;
-}
-
-
-/* =====================================================
-   GAMEPLAY LOOP
-===================================================== */
-
-.GameplayLoop {
-    margin-top: 30px;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 10px;
-}
-
-.GameplayLoop span {
-    padding: 10px 16px;
-
-    border: 1px solid rgba(255, 255, 255, 0.2);
-
-    border-radius: 100px;
-
-    color: #d0c9c2;
-
-    font-size: 11px;
-}
-
-
-/* =====================================================
-   INTEGRATIONS
-===================================================== */
-
-.IntegrationGrid {
-    width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-    gap: 30px;
-}
-
-.IntegrationCard {
-    min-width: 0;
-
-    padding: 30px;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-
-    border-radius: 18px;
-}
-
-.IntegrationCard img {
-    width: 100%;
-    height: auto;
-
-    margin-top: 30px;
 
     border-radius: 12px;
 }
@@ -694,7 +529,7 @@
    FINAL RESULT
 ===================================================== */
 
-.FinalResult {
+.PandeBonus .FinalResult {
     width: 100%;
     max-width: 1400px;
 
@@ -703,14 +538,14 @@
     padding: 120px 6%;
 }
 
-.FinalResultMedia {
+.PandeBonus .FinalResultMedia {
     width: 100%;
 
     margin-bottom: 60px;
 }
 
-.FinalResultMedia img,
-.FinalResultMedia video {
+.PandeBonus .FinalResultMedia img,
+.PandeBonus .FinalResultMedia video {
     width: 100%;
     height: auto;
 
@@ -721,7 +556,7 @@
     border-radius: 20px;
 }
 
-.FinalResultText {
+.PandeBonus .FinalResultText {
     max-width: 850px;
 
     margin: 0 auto;
@@ -729,7 +564,7 @@
     text-align: center;
 }
 
-.FinalResultText h2 {
+.PandeBonus .FinalResultText h2 {
     margin-bottom: 30px;
 
     font-size: clamp(36px, 5vw, 70px);
@@ -741,7 +576,7 @@
    LEARNINGS
 ===================================================== */
 
-.ProjectLearnings {
+.PandeBonus .ProjectLearnings {
     width: 100%;
     max-width: 1200px;
 
@@ -750,7 +585,7 @@
     padding: 100px 6%;
 }
 
-.LearningTags {
+.PandeBonus .LearningTags {
     display: flex;
 
     flex-wrap: wrap;
@@ -762,7 +597,7 @@
     margin-bottom: 60px;
 }
 
-.LearningTags span {
+.PandeBonus .LearningTags span {
     padding: 12px 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -774,7 +609,7 @@
     font-size: 13px;
 }
 
-.LearningConclusion {
+.PandeBonus .LearningConclusion {
     max-width: 800px;
 
     margin: 0 auto;
@@ -792,7 +627,7 @@
    GALLERY
 ===================================================== */
 
-.ProjectGallery {
+.PandeBonus .ProjectGallery {
     width: 100%;
     max-width: 1400px;
 
@@ -801,7 +636,7 @@
     padding: 100px 6%;
 }
 
-.GalleryGrid {
+.PandeBonus .GalleryGrid {
     display: grid;
 
     grid-template-columns:
@@ -810,7 +645,7 @@
     gap: 20px;
 }
 
-.GalleryGrid img {
+.PandeBonus .GalleryGrid img {
     width: 100%;
     height: auto;
 
@@ -828,17 +663,12 @@
 
 @media (max-width: 1100px) {
 
-    .ToolsGrid {
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-    }
-
-    .ProjectHeroContent {
+    .PandeBonus .ProjectHeroContent {
         grid-template-columns:
             minmax(0, 1fr);
     }
 
-    .ProjectHeroText {
+    .PandeBonus .ProjectHeroText {
         max-width: 800px;
 
         margin: 0 auto;
@@ -846,111 +676,99 @@
         text-align: center;
     }
 
-    .ProjectHero p {
+    .PandeBonus .ProjectHero p {
         margin: 0 auto;
     }
 
-    .ProjectButtons {
-        display: flex;
-
-        justify-content: center;
-    }
-
-    .ProjectSection,
-    .ProjectFeature,
-    .ProjectFeatureReverse {
+    .PandeBonus .ProjectSection,
+    .PandeBonus .ProjectFeature,
+    .PandeBonus .ProjectFeatureReverse {
         grid-template-columns:
             minmax(0, 1fr);
 
         gap: 50px;
     }
 
-    .ProjectFeatureReverse .FeatureText {
+    .PandeBonus .ProjectFeatureReverse .FeatureText {
         order: 1;
     }
 
-    .ProjectFeatureReverse .FeatureMedia {
+    .PandeBonus .ProjectFeatureReverse .FeatureMedia {
         order: 2;
     }
-
 }
 
 
 @media (max-width: 768px) {
 
-    .ProjectHero {
+    .PandeBonus .ProjectHero {
         min-height: auto;
 
         padding: 90px 20px;
     }
 
-    .ProjectTools,
-    .ProjectSection,
-    .ProjectFeature,
-    .ProjectUI,
-    .ProjectCharacters,
-    .ProjectArchitecture,
-    .ProjectLearnings,
-    .ProjectGallery,
-    .FinalResult {
+    .PandeBonus .ProjectTools,
+    .PandeBonus .ProjectSection,
+    .PandeBonus .ProjectFeature,
+    .PandeBonus .ProjectCharacters,
+    .PandeBonus .ProjectArchitecture,
+    .PandeBonus .ProjectLearnings,
+    .PandeBonus .ProjectGallery,
+    .PandeBonus .FinalResult {
         padding: 80px 20px;
     }
 
-    .ProjectProblem {
+    .PandeBonus .ProjectProblem {
         padding: 80px 20px;
     }
 
-    .ToolsGrid {
+    .PandeBonus .ToolsGrid {
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
     }
 
-    .CharacterGrid,
-    .ProblemGrid,
-    .ArchitectureGrid,
-    .UIComparison,
-    .IntegrationGrid {
+    .PandeBonus .CharacterGrid,
+    .PandeBonus .ProblemGrid,
+    .PandeBonus .ArchitectureGrid {
         grid-template-columns:
             minmax(0, 1fr);
     }
 
-    .CharacterViewerWrapper {
+    .PandeBonus .CharacterViewerWrapper {
         height: 450px;
     }
 
-    .GalleryGrid {
+    .PandeBonus .GalleryGrid {
         grid-template-columns:
             minmax(0, 1fr);
     }
-
 }
 
 
 @media (max-width: 480px) {
 
-    .ProjectHero h1 {
+    .PandeBonus .ProjectHero h1 {
         font-size: 44px;
     }
 
-    .ToolsGrid {
+    .PandeBonus .ToolsGrid {
         gap: 10px;
     }
 
-    .ToolCard {
+    .PandeBonus .ToolCard {
         min-height: 120px;
 
         padding: 15px 10px;
     }
 
-    .ToolIcon {
+    .PandeBonus .ToolIcon {
         width: 40px;
         height: 40px;
 
         font-size: 40px;
     }
 
-    .CharacterViewerWrapper {
+    .PandeBonus .CharacterViewerWrapper {
         height: 380px;
     }
-
 }

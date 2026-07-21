@@ -4,9 +4,9 @@
     align-items: center;
     gap: 40px;
 
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 140px 20px;
+    padding: 110px 20px;
 }
 
 .ImageContainer {
@@ -47,4 +47,38 @@
         align-items: flex-start;
     }
 
+}
+
+
+.ProfessionalSummary {
+    margin-top: 40px;
+    padding-top: 24px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ProfessionalSummary p {
+    margin-bottom: 20px;
+}
+
+.CVButton {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    background: var(--Red);
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: transform 0.2s ease,
+                opacity 0.2s ease;
+}
+
+.CVButton:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
 }

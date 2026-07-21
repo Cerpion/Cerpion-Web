@@ -1,16 +1,143 @@
 {
-  "title": "Crimson Soul",
+  "title": "Pan de Bonus",
 
-  "description": "Crimson Soul is a solo-developed fast-paced action RPG featuring responsive combat, RPG progression, and increasingly challenging enemies. I was responsible for designing and implementing every core gameplay system, creating visual effects, and building the user interface.",
+  "description": "Pan de Bonus es un videojuego educativo diseñado para enseñar la multiplicación a través del isomorfismo de medidas. Desarrollé la lógica del juego, los personajes, los assets 3D, las animaciones y los efectos visuales.",
 
   "highlights": [
-    "Created shaders and visual effects for gameplay.",
-    "Implemented combat feedback and hit effects.",
-    "Optimized gameplay systems and UI."
+    "Desarrollé la lógica principal del videojuego.",
+    "Modelé, texturicé y animé personajes y assets 3D.",
+    "Creé efectos visuales para reforzar la experiencia de juego."
   ],
 
   "buttons": {
-    "viewProject": "View Project",
-    "play": "Play"
+    "viewProject": "Ver Proyecto",
+    "play": "Ver Página Web"
+  },
+
+ "hero": {
+    "eyebrow": "PROYECTO EDUCATIVO / DESARROLLO DE VIDEOJUEGOS",
+    "title": "Pan de Bonus",
+    "description": "Un videojuego educativo en el que los jugadores deben preparar diferentes recetas mientras resuelven situaciones basadas en la multiplicación y el isomorfismo de medidas."
+  },
+
+  "tools": {
+    "label": "HERRAMIENTAS Y TECNOLOGÍAS",
+    "title": "Una experiencia construida combinando diferentes disciplinas."
+  },
+
+  "project": {
+    "label": "EL PROYECTO",
+    "title": "Aprender a través del juego.",
+    "paragraph1": "Pan de Bonus fue desarrollado como una experiencia lúdica para apoyar la enseñanza de la multiplicación mediante situaciones problema basadas en el isomorfismo de medidas.",
+    "paragraph2": "El jugador debe atender a diferentes clientes, interpretar sus pedidos y preparar las recetas correctas dentro de un tiempo limitado. De esta forma, los conceptos matemáticos se integran directamente dentro de las acciones del gameplay."
+  },
+
+  "challenge": {
+    "label": "EL DESAFÍO",
+    "title": "Aprender programación construyendo un videojuego.",
+    "paragraph1": "Cuando comencé a trabajar en Pan de Bonus todavía estaba desarrollando mis conocimientos de programación. La creación de la lógica del juego representó uno de mis primeros grandes retos dentro del desarrollo de videojuegos.",
+    "paragraph2": "Tuve que investigar, leer documentación, probar diferentes soluciones y aprender a través del error hasta conseguir implementar los sistemas necesarios para que la experiencia funcionara correctamente."
+  },
+
+  "characters": {
+    "label": "DISEÑO DE PERSONAJES",
+    "title": "Personajes inspirados en nuestra cultura.",
+
+    "baker": {
+      "title": "EL PANADERO",
+      "paragraph": "El panadero es el personaje principal y representa al jugador dentro de la experiencia. Es el encargado de preparar las recetas, amasar los ingredientes y completar correctamente los pedidos de los clientes."
+    },
+
+    "customers": {
+      "title": "LOS CLIENTES",
+      "paragraph": "Los clientes llegan con diferentes pedidos y representan las situaciones problema que el jugador debe resolver. Cada personaje fue diseñado buscando representar elementos de la cultura colombiana a través de su apariencia, vestimenta y estilo visual."
+    }
+  },
+
+  "artProcess": {
+    "label": "PROCESO DE ARTE",
+    "title": "Del modelo 3D al personaje final.",
+    "paragraph1": "Desarrollé los personajes utilizando diferentes etapas del proceso de creación 3D, incluyendo modelado, escultura, bakeo y texturizado.",
+    "paragraph2": "Para las texturas utilicé un enfoque hand-painted que permitiera mantener una estética estilizada y colorida, adecuada para la experiencia educativa."
+  },
+
+  "gameplay": {
+    "label": "SISTEMAS DE GAMEPLAY",
+    "title": "Construyendo la lógica detrás de la experiencia.",
+    "paragraph1": "Desarrollé la lógica y los sistemas principales necesarios para que el jugador pudiera interactuar con los pedidos, preparar las recetas y completar correctamente cada situación.",
+    "paragraph2": "El gameplay se construye alrededor de diferentes interacciones que conectan las acciones del jugador con los objetivos educativos del proyecto."
+  },
+
+  "orders": {
+    "label": "GAMEPLAY LOOP",
+    "title": "Recibir, interpretar y preparar.",
+
+    "request": {
+      "title": "RECIBIR EL PEDIDO",
+      "description": "Un cliente llega a la panadería y solicita una preparación específica. El jugador debe comprender correctamente la información del pedido."
+    },
+
+    "prepare": {
+      "title": "PREPARAR LA RECETA",
+      "description": "El jugador debe seleccionar y combinar los ingredientes necesarios para preparar correctamente la receta solicitada."
+    },
+
+    "complete": {
+      "title": "COMPLETAR EL PEDIDO",
+      "description": "Una vez preparada la receta, el jugador debe entregar el resultado correcto al cliente antes de que se acabe el tiempo."
+    }
+  },
+
+  "visuals": {
+    "label": "EFECTOS Y ANIMACIÓN",
+    "title": "Dando vida a la experiencia.",
+
+    "vfx": {
+      "title": "EFECTOS VISUALES",
+      "description": "Desarrollé e implementé efectos visuales para reforzar las diferentes acciones del gameplay y hacer que las interacciones fueran más claras para el jugador."
+    },
+
+    "animation": {
+      "title": "ANIMACIÓN",
+      "description": "También fui responsable de crear las animaciones de los personajes y las diferentes acciones necesarias para el gameplay, ayudando a comunicar visualmente cada interacción."
+    }
+  },
+
+  "educational": {
+    "label": "DISEÑO EDUCATIVO",
+    "title": "La multiplicación integrada en el gameplay.",
+    "paragraph1": "El juego fue diseñado teniendo en cuenta las competencias matemáticas que deben desarrollar los estudiantes de tercer grado de primaria en relación con la conceptualización y el dominio de la estructura multiplicativa.",
+    "paragraph2": "Cada pedido representa una situación problema en la que el jugador debe comprender la relación entre diferentes magnitudes para obtener el resultado correcto. El objetivo era integrar el aprendizaje dentro de las decisiones y acciones naturales del juego."
+  },
+
+  "finalResult": {
+    "label": "RESULTADO FINAL",
+    "title": "Aprender convirtiendo las matemáticas en una experiencia.",
+    "description": "Pan de Bonus fue una experiencia que combinó programación, diseño de gameplay, modelado 3D, texturizado, animación y efectos visuales para crear una herramienta educativa interactiva. El resultado fue un videojuego probado con estudiantes, quienes reaccionaron positivamente a la experiencia."
+  },
+
+  "learnings": {
+    "label": "LO QUE APRENDÍ",
+    "title": "Aprender haciendo.",
+
+    "tags": [
+      "Programación",
+      "Diseño de Gameplay",
+      "Modelado 3D",
+      "Escultura 3D",
+      "Texturizado",
+      "Hand-Painted",
+      "Animación",
+      "Efectos Visuales",
+      "Diseño de Personajes",
+      "Desarrollo Educativo"
+    ],
+
+    "conclusion": "Pan de Bonus me enseñó que los proyectos no tienen que comenzar con conocimientos perfectos. A través de la investigación, la documentación, la experimentación y el error, pude desarrollar sistemas que inicialmente estaban fuera de mi zona de conocimiento y convertir una idea educativa en una experiencia jugable."
+  },
+
+  "gallery": {
+    "label": "GALERÍA",
+    "title": "Pan de Bonus."
   }
 }

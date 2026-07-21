@@ -1,16 +1,110 @@
 {
-  "title": "Crimson Soul",
+  "title": "Foresight Sports",
 
-  "description": "Crimson Soul is a solo-developed fast-paced action RPG featuring responsive combat, RPG progression, and increasingly challenging enemies. I was responsible for designing and implementing every core gameplay system, creating visual effects, and building the user interface.",
+  "description": "Fui responsable del desarrollo e implementación de interfaces de usuario para aplicaciones enfocadas en simulación de golf. Trabajé en la creación de interfaces responsivas, la integración de funcionalidades y la optimización de la experiencia del usuario utilizando tecnologías modernas.",
 
   "highlights": [
-    "Created shaders and visual effects for gameplay.",
-    "Implemented combat feedback and hit effects.",
-    "Optimized gameplay systems and UI."
+    "Desarrollé interfaces de usuario con NoesisGUI y C#.",
+    "Implementé nuevas funcionalidades y componentes de UI.",
+    "Optimicé el rendimiento y la experiencia de usuario."
   ],
 
   "buttons": {
     "viewProject": "View Project",
-    "play": "Play"
+    "play": "Ver Página Web"
+  },
+
+
+  "hero": {
+    "eyebrow": "EXPERIENCIA PROFESIONAL / DESARROLLO DE UI",
+    "title": "Foresight Sports",
+    "description": "Durante mi experiencia en ForesightSports trabajé principalmente en el desarrollo de interfaces de usuario para un simulador de golf profesional, utilizando Unity, NoesisGUI, XAML y una arquitectura basada en MVVM."
+  },
+
+  "tools": {
+    "label": "HERRAMIENTAS Y TECNOLOGÍAS",
+    "title": "Construido dentro de un ecosistema de software complejo."
+  },
+
+  "project": {
+    "label": "EL PROYECTO",
+    "title": "Una experiencia diferente a todo lo que había hecho antes.",
+    "paragraph1": "Después de más de ocho años trabajando con Unity, comenzar a trabajar con NoesisGUI representó un nuevo reto para mí. Aunque el proyecto utilizaba Unity como base, la creación de interfaces se realizaba mediante XAML y una arquitectura basada en MVVM.",
+    "paragraph2": "Durante mis primeros meses me adapté rápidamente al ecosistema existente, a las herramientas del equipo y a una base de código de gran escala desarrollada por personas de diferentes culturas y perfiles profesionales."
+  },
+
+  "challenge": {
+    "label": "EL DESAFÍO",
+    "title": "Aprender un nuevo flujo de trabajo en poco tiempo.",
+    "paragraph1": "NoesisGUI era una tecnología completamente nueva para mí. Tuve que aprender rápidamente cómo trabajar con XAML, binding de datos, MVVM y la arquitectura específica que el equipo había construido alrededor del proyecto.",
+    "paragraph2": "Comencé resolviendo bugs pequeños mientras entendía el funcionamiento del sistema. Esto me permitió familiarizarme progresivamente con el código existente y empezar a trabajar en funcionalidades de mayor responsabilidad."
+  },
+
+  "leaderboards": {
+    "label": "PRIMER GRAN RETO",
+    "title": "Construyendo nuevas interfaces para los datos del jugador.",
+
+    "leaderboard": {
+      "title": "LEADERBOARD",
+      "description": "Desarrollé una nueva tabla de clasificación para mostrar los resultados de los jugadores y permitir la comparación de puntuaciones dentro del sistema."
+    },
+
+    "statistics": {
+      "title": "SHOT STATISTICS",
+      "description": "También desarrollé una interfaz para mostrar las estadísticas y la información detallada asociada a cada disparo realizado por el jugador."
+    }
+  },
+
+  "clubSystem": {
+    "label": "REFACTORIZACIÓN DE SISTEMAS",
+    "title": "Reestructurando un sistema para hacerlo extensible.",
+    "paragraph1": "Uno de los mayores retos llegó con la expansión del sistema de palos de golf. La nueva funcionalidad requería múltiples cambios, pero gran parte de la lógica y las vistas existentes estaban distribuidas en diferentes scripts y presentaban problemas de mantenimiento.",
+    "paragraph2": "Reestructuré el sistema aplicando mejores prácticas de arquitectura y programación para hacerlo más claro, mantenible y extensible. El resultado permitió incorporar las nuevas funcionalidades sin tener que continuar aumentando la complejidad del sistema existente."
+  },
+
+  "gc3": {
+    "label": "NUEVA RESPONSABILIDAD",
+    "title": "Una interfaz completa desarrollada en una semana.",
+    "paragraph1": "Mientras continuaba trabajando en nuevas funcionalidades para la información de los disparos, también surgió la necesidad de desarrollar una interfaz de configuración para el dispositivo GC3.",
+    "paragraph2": "La tarea originalmente estaba planificada para aproximadamente un mes de trabajo. Debido a la necesidad de completar la funcionalidad, asumí la responsabilidad del desarrollo y logré finalizarla en una semana, entregándola dentro del plazo requerido."
+  },
+
+  "multiplayer": {
+    "label": "SISTEMAS MULTIJUGADOR",
+    "title": "Diseñando interfaces para sistemas conectados.",
+    "paragraph1": "Mi último gran reto fue trabajar en la interfaz del sistema multijugador. Esto implicó comprender cómo se comunicaban diferentes dispositivos y cómo debía reaccionar la interfaz ante los cambios producidos tanto en el cliente como en el servidor.",
+    "paragraph2": "Esta experiencia me permitió comprender mejor la relación entre los sistemas online y la interfaz de usuario, así como la importancia de diseñar la UI para responder correctamente a diferentes estados de conexión y flujo de información."
+  },
+
+  "finalResult": {
+    "label": "RESULTADO FINAL",
+    "title": "Una experiencia que amplió mi forma de trabajar.",
+    "description": "Mi experiencia en ForesightSports me permitió trabajar en un proyecto de gran escala, aprender una nueva tecnología de UI y participar en sistemas que iban desde tablas de estadísticas y configuraciones de dispositivos hasta funcionalidades multijugador."
+  },
+
+  "learnings": {
+    "label": "LO QUE APRENDÍ",
+
+    "title": "Más allá de crear interfaces.",
+
+    "tags": [
+      "Unity",
+      "NoesisGUI",
+      "XAML",
+      "MVVM",
+      "UI Architecture",
+      "C#",
+      "Git",
+      "Multiplayer Systems",
+      "Software Architecture",
+      "Refactoring"
+    ],
+
+    "conclusion": "Uno de los aprendizajes más importantes fue entender que trabajar en UI dentro de un proyecto grande no consiste únicamente en construir interfaces visuales. También implica comprender la arquitectura, el flujo de datos, la comunicación entre sistemas y cómo crear soluciones que puedan mantenerse y extenderse a largo plazo."
+  },
+
+  "gallery": {
+    "label": "GALERÍA",
+    "title": "ForesightSports."
   }
 }

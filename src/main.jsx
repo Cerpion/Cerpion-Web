@@ -13,6 +13,8 @@ import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 
 import CrimsonSoul from "./Pages/Proyects/CrimsonSoul";
+import ForesightSports from "./Pages/Proyects/ForesightSports";
+import PanDeBonus from "./Pages/Proyects/PanDeBonus";
 
 import CerpionFooter from "./Pages/Footer/CerpionFooter";
 
@@ -30,6 +32,8 @@ createRoot(document.getElementById("root")).render(
               <Route path="/Contact" element={<Contact />} />
 
               <Route path="/CrimsonSoul" element={<CrimsonSoul />} />
+              <Route path="/ForesightSports" element={<ForesightSports />} />
+              <Route path="/PanDeBonus" element={<PanDeBonus />} />
             </Routes>
           </div>
           <CerpionFooter />

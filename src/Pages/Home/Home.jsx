@@ -11,8 +11,9 @@ const Home = () => {
     <div className="HomeContainer">
       <h1>{texts.common.home.title}</h1>
 
-      <p>{texts.common.home.description}</p>
+      <p>{texts.common.home.intro}</p>
 
+      <p>{texts.common.home.description}</p>
       <div className="ProjectsContainer">
         {projects.map((project) => {
           const projectTexts = texts.projects[project.id];
