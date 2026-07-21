@@ -4,17 +4,16 @@ import CV from "../../assets/CV/CV.pdf";
 
 import { useLanguage } from "../../localization/LanguageContext";
 
+import AboutCharacter from "../../assets/Models/About/AboutCharacter.glb?url";
+import AboutCharacterViewer from "../../Components/AboutCharacterViewer";
+
 function About() {
   const { texts } = useLanguage();
 
   return (
     <div className="AboutMeContainer">
-      <div className="DesktopGifContainer">
-        <img
-          src={AboutMeDesktop}
-          className="DesktopGif"
-          alt="Miguel Ángel Torres García"
-        />
+      <div className="DesktopCharacterContainer">
+        <AboutCharacterViewer character={AboutCharacter} headBoneName="Head" />
       </div>
 
       <div className="TextContainer">
